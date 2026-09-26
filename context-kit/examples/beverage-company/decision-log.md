@@ -47,7 +47,7 @@ Selected entries shown; the gaps in numbering are entries left out of this examp
 - **Status:** active. **Files updated:** company brief, facts sheet.
 
 ### D-6: Subscription delivery retired
-- **Date:** 2026-02-20
+- **Date:** 2026-04-20
 - **Decision:** stop offering a fixed weekly subscription.
 - **Reason:** two sign-ups in three months; every bar said they order to their own stock level.
 - **Status:** active. **Files updated:** specifications index (retired).

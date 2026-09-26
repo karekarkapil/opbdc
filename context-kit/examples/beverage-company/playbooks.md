@@ -34,7 +34,7 @@ Owner: Meera
 Trust-ladder rung: 1 Draft (the agent collects and prepares; Meera signs every substantive reply and approves every replacement)
 
 ### Goal
-Replace damaged bottles quickly and keep the customer's trust. A broken case on a Friday costs a bar its drinks for the weekend.
+Replace damaged bottles quickly and keep the customer's trust. Broken bottles in a Thursday delivery can leave a bar short for the weekend, since we do not deliver Friday to Sunday.
 
 ### When to use
 - Trigger: a customer reports broken, cracked, leaking or crushed bottles.

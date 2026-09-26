@@ -155,7 +155,7 @@ Fill this in for your own systems, then copy it into your [permission matrix](..
 | Receipt inbox or folder | Yes | Label, file | No | Not applicable |
 | Invoicing | Yes | Draft; send routine invoices | No | Credit notes, non-routine invoices |
 | Email to customers | Own sent items | Pre-approved reminder only | No | Every other message |
-| Agent card | Not applicable | No: the finance agent holds no card and buys nothing | Not applicable | Not applicable. If another agent must buy anything, give it its own low-limit card and its own row in the permission matrix; never the finance agent, which reads untrusted invoices |
+| Agent card | Not applicable | No: the finance agent holds no card and buys nothing | Not applicable | Not applicable. If another agent must buy anything, give it its own low-limit card and its own row in the permission matrix, and only to an agent that reads no untrusted content (no inbound email, invoices, web pages or customer messages); never the finance agent, which reads untrusted invoices |
 | Context kit | Yes | Suggest edits only | No | Every change to the facts sheet |
 
 ## Related files

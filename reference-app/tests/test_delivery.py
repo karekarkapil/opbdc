@@ -100,6 +100,7 @@ def test_delivery_is_always_monday_to_thursday_on_the_area_day_and_after_the_ord
         for hour in range(0, 24 * 14):
             moment = start + timedelta(hours=hour)
             result = delivery_day(moment, SCHEDULE, area)
+            assert result.date is not None  # every area here has a fixed day
             assert result.date.weekday() == weekday <= THURSDAY
             assert result.date > moment.date()
 
@@ -160,7 +161,7 @@ max_bottles_per_line = 60
 @pytest.mark.parametrize(
     ("cutoff_day", "cutoff_time", "extra_day", "extra_areas"),
     [
-        ("Sundy", "20:00", "Tuesday", '["Koramangala"]'),  # misspelt day
+        ("Sundy", "20:00", "Tuesday", '["Koramangala"]'),  # misspelled day
         ("Sunday", "25:00", "Tuesday", '["Koramangala"]'),  # impossible time
         ("Sunday", "8pm", "Tuesday", '["Koramangala"]'),  # not a 24-hour time
         ("Sunday", "20:00", "Friday", '["Koramangala"]'),  # no Friday deliveries

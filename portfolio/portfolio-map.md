@@ -92,7 +92,7 @@ Copy this block once per company.
 
 *Illustration, and a thought experiment: the founder, Copper Pot Mixers and Ledgerly are fictional. Everywhere else in this repository the two are separate companies with separate founders, both started in late 2025 (Meera runs Copper Pot; Ledgerly's founder is a bookkeeper). Here we imagine one founder holding both, as if Ledgerly had been started later, as "same machine, new customer" (Chapter 16), only after Copper Pot had passed the readiness test. Copper Pot sells craft cocktail mixers to bars and cafes in Bengaluru; Ledgerly is a small bookkeeping-software company selling to micro businesses in the US and UK.*
 
-**Holding layer.** Mission: "Small companies that do one useful thing very well, run by one founder and a machine that keeps its promises." One weekly portfolio review, Monday 9 to 10:30 am. A holding company is under discussion with a lawyer and an accountant in each country, because the two companies are in different jurisdictions.
+**Holding layer.** Mission: "Small companies that do one useful thing very well, run by one founder and a machine that keeps its promises." One weekly portfolio review, Monday from 9 am, about seventy minutes. A holding company is under discussion with a lawyer and an accountant in each country, because the two companies are in different jurisdictions.
 
 **Shared services.**
 
@@ -112,7 +112,7 @@ Copy this block once per company.
 | Path | Cash flow | Asset (built to be sellable) |
 | Quarterly verdict | Keep steady | Grow |
 | Front-office agents | Support, sales (proposal drafts), marketing drafts, as in its company brief | Support (chat and email), as in its company brief |
-| Back-office agents | Finance, purchasing and compliance, Copper Pot permissions only | Finance (its own close and Assist preparation) and compliance, Ledgerly permissions only; coding and operations agents reach only Ledgerly's product |
+| Back-office agents | Finance and purchasing, Copper Pot permissions only | Finance (its own close and Assist preparation), Ledgerly permissions only; coding and operations agents reach only Ledgerly's product |
 | Dashboard status | Green | Amber (re-contact rate rising) |
 | Weekly attention | About 30 percent | About 70 percent |
 

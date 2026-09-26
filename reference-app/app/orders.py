@@ -2,7 +2,7 @@
 
 No web code here. Every function takes the database connection, the account
 and, where time matters, `now`, so the tests can drive each rule directly.
-Quantities are bottles; orders go out in whole cases of six, flavours mixed.
+Quantities are bottles; orders go out in whole cases of six, flavors mixed.
 """
 
 import re
@@ -68,7 +68,7 @@ def parse_quantities(form, plan: RepeatPlan, facts: Facts) -> dict[int, int]:
         quantity = int(raw)
         if quantity > most:
             raise OrderError(
-                f"Up to {most} bottles of each flavour per order. For more, message us."
+                f"Up to {most} bottles of each flavor per order. For more, message us."
             )
         if quantity > 0:
             quantities[line.product_id] = quantity
@@ -78,7 +78,7 @@ def parse_quantities(form, plan: RepeatPlan, facts: Facts) -> dict[int, int]:
     if bottles % case:
         short, over = case - bottles % case, bottles % case
         raise OrderError(
-            f"Orders go out in whole cases of {case} bottles, and flavours can be mixed. "
+            f"Orders go out in whole cases of {case} bottles, and flavors can be mixed. "
             f"You have {bottles} bottles: add {short} more, or remove {over}."
         )
     return quantities

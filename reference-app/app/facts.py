@@ -13,6 +13,7 @@ from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 from app.delivery import WEEKDAYS, DeliverySchedule
 
 DEFAULT_FACTS = Path(__file__).resolve().parent.parent / "facts" / "facts.toml"
+NUMBER_WORDS = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
 
 
 @dataclass(frozen=True)
@@ -29,6 +30,13 @@ class Facts:
         """Facts sheet: free for two cases or more; otherwise Rs 150 per delivery."""
         cases = bottles // self.bottles_per_case
         return 0 if cases >= self.free_delivery_from_cases else self.delivery_charge_paise
+
+    @property
+    def free_delivery_from(self) -> str:
+        """Written the way the facts sheet writes it: two cases."""
+        n = self.free_delivery_from_cases
+        word = NUMBER_WORDS[n] if 0 <= n < len(NUMBER_WORDS) else str(n)
+        return f"{word} case" if n == 1 else f"{word} cases"
 
 
 def _weekday(name: str) -> int:

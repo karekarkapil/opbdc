@@ -109,7 +109,7 @@ Fifteen minutes, every week, a random selection of what your agents did. Pick tr
 
 | Week of | Job | Items read | Problems found | What I changed | Rung change? |
 |---|---|---|---|---|---|
-| [YYYY-MM-DD] | [Support replies] | [20] | [e.g. 1 reply quoted old delivery charge] | [Fixed facts sheet; added rule to instructions] | [No] |
+| [YYYY-MM-DD] | [Support replies] | [20] | [e.g. 1 reply ran to six sentences] | [Added a length rule to the support instructions] | [No] |
 | | | | | | |
 | | | | | | |
 

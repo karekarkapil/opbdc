@@ -1,13 +1,14 @@
 # Copper Pot Mixers, Bengaluru: the facts the reorder page tells customers.
 #
 # This is the app's machine-readable copy of the company facts sheet,
-# context-kit/examples/beverage-company/facts-sheet.md (sheet last checked 2026-09-01).
+# context-kit/examples/beverage-company/facts-sheet.md (sheet last checked 2026-09-26).
 # The sheet is the source of truth: when a fact changes, it changes there first,
 # then here, in the same change. tests/test_facts_sheet.py fails if they disagree.
 # This file last checked: 2026-09-26.
 
 [ordering]
-# Bengaluru. India Standard Time, UTC+5:30, no daylight saving.
+# "All days and times on this sheet are Bengaluru time (Asia/Kolkata, India Standard
+# Time)." UTC+5:30, no daylight saving.
 timezone = "Asia/Kolkata"
 # "Weekly cut-off: Sunday 8 pm for delivery that week."
 cutoff_weekday = "Sunday"

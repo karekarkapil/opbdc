@@ -4,7 +4,7 @@
 
 *Illustration: Copper Pot Mixers is a fictional company. Prices and policies are invented. Where the companion gives a dollar figure for orientation, it uses about Rs 83 to the US dollar; see the [README](README.md).*
 
-Last checked: 2026-09-01
+Last checked: 2026-09-26
 Rule for agents: state only what is written here. If a fact is missing, say "I don't know, let me find out" and escalate to Meera.
 
 ## Products
@@ -20,6 +20,8 @@ All mixers come in a 750 ml glass bottle, which makes 25 serves at 30 ml per dri
 
 Prices are in Indian rupees and include applicable taxes as shown on the invoice. Quote prices to customers in rupees only.
 
+No longer sold: Guava and Pink Salt. Older orders may still list it; it cannot be reordered.
+
 ## What we do not claim
 - Our mixers contain no alcohol. We do not advise on the alcohol content of finished drinks.
 - We make no health claims of any kind ("healthy", "natural energy", "good for digestion" are never used).
@@ -32,6 +34,7 @@ Prices are in Indian rupees and include applicable taxes as shown on the invoice
 ## Ordering
 - Minimum order: one case (six bottles, flavors can be mixed).
 - How to order: the reorder page, WhatsApp, or email to hello@copperpot.example.
+- Times: all days and times on this sheet are Bengaluru time (Asia/Kolkata, India Standard Time).
 - Weekly cut-off: Sunday 8 pm for delivery that week. Orders after the cut-off are delivered the following week.
 - Cancelling: orders on the reorder page can be cancelled within 30 minutes of placing them. After that, message us and Meera will decide.
 
@@ -76,6 +79,7 @@ Prices are in Indian rupees and include applicable taxes as shown on the invoice
 ## Change history
 | Date | What changed | Old value | New value |
 |---|---|---|---|
+| 2026-09-26 | Time zone and discontinued flavors written down (they were assumed before) | Not stated | Bengaluru time; Guava and Pink Salt no longer sold |
 | 2026-08-10 | Goodwill credit for our own mistakes | Meera only | Assistant may add up to Rs 300 per customer per month (decision D-8) |
 | 2026-07-01 | Tender Coconut and Lemongrass price | Rs 520 | Rs 560 |
 | 2026-04-15 | Delivery charge threshold | free for three cases | free for two cases |

@@ -3,28 +3,42 @@
 # GitHub only runs workflows from .github/workflows/ at the ROOT of a repository,
 # so this file lives at the root of the companion repository and runs every step
 # inside reference-app/. If you copy reference-app/ out as the root of your own
-# repository, move this file to its .github/workflows/, and delete the `paths`
-# filters and the `working-directory` line.
+# repository, move this file to its .github/workflows/, then:
+#   - delete the `paths` filters (both of them) and the `defaults` block with its
+#     `working-directory` line;
+#   - change `cache-dependency-path: reference-app/requirements*.txt` to
+#     `cache-dependency-path: requirements*.txt`.
 #
-# The checks, in the order Chapter 7 lists them: secret scan, lint, tests,
-# known vulnerabilities in dependencies. If any fails, the change stops here.
+# The checks are the ones Chapter 7 lists (tests, type checks, the linter, a secret
+# scan), plus known vulnerabilities in dependencies. They run in this order: the
+# secret scan first, before anything is installed; then lint, type checks, tests
+# and the vulnerability check. If any fails, the change stops here.
 
 name: reference-app CI
 
+# The facts sheet is here because tests/test_facts_sheet.py reads it: a change to
+# the sheet must run the test that catches the app drifting from it.
 on:
   push:
     branches: [main]
-    paths: ["reference-app/**", ".github/workflows/reference-app-ci.yml"]
+    paths:
+      - "reference-app/**"
+      - "context-kit/examples/beverage-company/facts-sheet.md"
+      - ".github/workflows/reference-app-ci.yml"
   pull_request:
-    paths: ["reference-app/**", ".github/workflows/reference-app-ci.yml"]
+    paths:
+      - "reference-app/**"
+      - "context-kit/examples/beverage-company/facts-sheet.md"
+      - ".github/workflows/reference-app-ci.yml"
 
 # Read-only by default: CI needs to read the code, never to change it.
 permissions:
   contents: read
 
-# A newer push to the same branch cancels the older run.
+# A newer push to the same branch cancels the older run of this workflow (and only
+# this workflow: the group names it, so other workflows in the repository are safe).
 concurrency:
-  group: ci-${{ github.ref }}
+  group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
 defaults:
@@ -67,6 +81,9 @@ jobs:
         run: |
           ruff check .
           ruff format --check .
+
+      - name: Type checks (mypy, settings in pyproject.toml)
+        run: mypy
 
       - name: Tests, including every acceptance test in the spec
         run: pytest -W error

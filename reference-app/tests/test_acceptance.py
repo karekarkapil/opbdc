@@ -246,7 +246,7 @@ def test_at8_only_the_expected_routes_exist(app):
         (method, route.path)
         for route in app.routes
         if isinstance(route, APIRoute)
-        for method in route.methods
+        for method in route.methods or ()
     }
     assert routes == {
         ("GET", "/"),

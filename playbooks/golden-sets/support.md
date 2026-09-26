@@ -86,7 +86,7 @@ For each case:
 | Date | What changed | Cases | Passed | Failed cases | Decision |
 |---|---|---|---|---|---|
 | [YYYY-MM-DD] | [e.g. new model tier for support] | [5] | [5] | [none] | [Go live] |
-| 2026-08-18 | Delivery charge changed in facts sheet | 5 | 4 | case 1 (quoted the old delivery charge from a cached playbook) | Fixed playbook to point at facts sheet; re-ran, 5 of 5; went live. A near miss: caught before release |
+| 2026-08-10 | Goodwill credit added to facts sheet and support instructions (D-8) | 5 | 4 | case 2 (offered a goodwill credit for the smashed bottles; the facts sheet excludes damage in transit) | Added "never for damage in transit" to the credit rule in the support instructions; re-ran, 5 of 5; went live. A near miss: caught before release |
 | | | | | | |
 
 ## Related files

@@ -16,7 +16,7 @@ Last checked: 2026-09-10
 ## Retired
 | Spec | Retired on | Why | Decision log entry |
 |---|---|---|---|
-| Subscription delivery | 2026-02-20 | Customers order to their own stock levels; no one wanted a fixed schedule | D-6 |
+| Subscription delivery | 2026-04-20 | Customers order to their own stock levels; no one wanted a fixed schedule | D-6 |
 
 ---
 

@@ -2,6 +2,8 @@
 
 Date: 2026-09-26. Written by the coding agent. The CI file was drafted earlier, while the independent review of brief 03 was running, because it touches no file the reviewer was reading; this brief covers finishing and checking it, and the rest of the step. The review record at the end says what actually happened.
 
+*Note added 2026-09-26 (brief 07): after this step, the CI file was moved out of this folder, from `reference-app/.github/workflows/ci.yml` to the companion repository's root as `.github/workflows/reference-app-ci.yml`, where GitHub runs it. Where this brief says `.github/workflows/ci.yml`, or that the file lives inside `reference-app/` where GitHub will not run it, read the new location. The move itself is recorded in brief 07. The text below is otherwise left as it was.*
+
 ## Goal
 
 Give the app the path from change to customer that Chapter 9 describes: automated checks on every change (Chapter 7's gates: tests, lint, secret scan, known vulnerabilities), an optional container for founders whose managed platform wants one, a short note on deploying with the least infrastructure that works, and a README that lets a founder run, test, review and reuse the app.
@@ -41,7 +43,7 @@ Give the app the path from change to customer that Chapter 9 describes: automate
 ## Review record (2026-09-26)
 
 **CI file.** Pinned before writing: `actions/checkout` v7.0.1 and `actions/setup-python` v7.0.0 by full commit (looked up from GitHub's API on the day), gitleaks 8.30.1 by version and by the SHA-256 in the release's checksums file. Permissions are read-only. It could not be run on GitHub from here (it lives inside `reference-app/`, and no git commands were run), so each step was run locally instead, in the same order:
-- Secret scan: `gitleaks dir . --no-banner --redact` found no leaks. It scanned about 309 KB, far less than the 71 MB `.venv`, so the reason was checked rather than guessed: gitleaks does not honour `.gitignore` in a plain folder (a planted key in an ignored folder was still found), but its default rules skip `site-packages` folders (a planted key there was not). In CI the scan runs before anything is installed, so this does not matter there. To check the scan works at all, a fake key was planted in a scratch folder outside the app: gitleaks found it and exited with 1, which fails a CI step.
+- Secret scan: `gitleaks dir . --no-banner --redact` found no leaks. It scanned about 309 KB, far less than the 71 MB `.venv`, so the reason was checked rather than guessed: gitleaks does not honor `.gitignore` in a plain folder (a planted key in an ignored folder was still found), but its default rules skip `site-packages` folders (a planted key there was not). In CI the scan runs before anything is installed, so this does not matter there. To check the scan works at all, a fake key was planted in a scratch folder outside the app: gitleaks found it and exited with 1, which fails a CI step.
 - Lint: `ruff check .` clean; `ruff format --check .` clean.
 - Tests: `pytest -W error`, `93 passed`.
 - Known vulnerabilities: `pip-audit -r requirements.txt`, "No known vulnerabilities found".

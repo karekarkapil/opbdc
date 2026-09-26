@@ -26,17 +26,20 @@ report personally and confirms the replacement. Our AI assistant can take
 the details and photo, but cannot promise a replacement.
 
 ## Wrong items
-If we send the wrong item, tell us within [48 hours]. We will collect it
-and deliver the right one at no charge.
+[Only if your facts sheet has a rule for wrong items. Copper Pot's does
+not yet: it covers them only through the goodwill credit. For example: If
+we send the wrong item, tell us within [48 hours]. We will collect it and
+deliver the right one at no charge.]
 
 ## Unopened goods
 You can exchange unopened bottles within [7 days] of delivery for other
 products of equal value. [State who pays for collection, if anyone.]
 
 ## Opened goods
-We cannot take back opened bottles unless they are faulty. If you believe
+We cannot take back opened bottles. [Only if your facts sheet has a rule
+for faulty goods (Copper Pot's does not yet). For example: If you believe
 a product is faulty, tell us within [N days] with the batch number from
-the label, and we will look into it and reply within [N working days].
+the label, and we will look into it and reply within [N working days].]
 
 ## Refunds
 Where a replacement or exchange is not possible, we refund to the original

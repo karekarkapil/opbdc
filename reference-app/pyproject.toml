@@ -17,3 +17,15 @@ extend-exclude = [".venv"]
 [tool.ruff.lint]
 # pycodestyle, pyflakes, import order, bugbear, simplify, pyupgrade
 select = ["E", "F", "I", "B", "SIM", "UP"]
+
+[tool.mypy]
+# Type checks, one of Chapter 7's automated gates. Not strict mode: annotations are
+# not required everywhere, but every function body is checked, annotated or not.
+python_version = "3.12"
+files = ["app", "tests"]
+check_untyped_defs = true
+strict_equality = true
+warn_unreachable = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_unused_configs = true

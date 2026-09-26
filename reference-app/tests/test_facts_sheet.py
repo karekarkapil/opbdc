@@ -55,6 +55,11 @@ def mismatches(sheet: str, facts, products, terms: str, bottle: str) -> list[str
         expect("bottle", m.group(1), bottle.removesuffix(" bottle"))
     if search(r"We do not offer credit terms") and search(r"payment is due on delivery"):
         expect("payment terms", "Due on delivery", terms)
+    if m := search(r"are Bengaluru time \((\w+/\w+)"):
+        expect("time zone", m.group(1), facts.schedule.timezone.key)
+    if m := search(r"No longer sold: ([^.]+)\."):
+        gone = set(m.group(1).split(", "))
+        expect("discontinued products", gone, {name for name, _, g in products if g})
 
     areas = {}
     for line in sheet.splitlines():
@@ -87,7 +92,14 @@ def test_the_app_matches_the_company_facts_sheet():
 def test_the_check_catches_a_drifted_sheet():
     """Positive control: a sheet with a new cut-off and a new price must be caught."""
     sheet = SHEET.read_text(encoding="utf-8")
-    drifted = sheet.replace("Sunday 8 pm", "Saturday 6 pm").replace("Rs 540", "Rs 560")
+    drifted = (
+        sheet.replace("Sunday 8 pm", "Saturday 6 pm")
+        .replace("Rs 540", "Rs 560")
+        .replace("Asia/Kolkata", "Asia/Dubai")
+        .replace("No longer sold: Guava and Pink Salt", "No longer sold: Jaggery Cola Syrup")
+    )
     problems = mismatches(drifted, load_facts(), PRODUCTS, TERMS, BOTTLE)
     assert any("cut-off" in p for p in problems)
     assert any("prices" in p for p in problems)
+    assert any("time zone" in p for p in problems)
+    assert any("discontinued" in p for p in problems)

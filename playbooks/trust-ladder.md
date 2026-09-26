@@ -93,7 +93,7 @@ The same jobs, as they would appear in the full register (as of 2026-09-08), wit
 | Job | Rung | Why | Track record | Last incident | Next review | Never above 2? |
 |---|---|---|---|---|---|---|
 | Email sorting | 4 | Reversible, high volume | 400+ | none | 2026-12-01 | No |
-| Routine stock and delivery answers | 3 | Facts sheet only; weekly sample | 52 | 2026-07-02 (a guessed delivery day reached a customer; demoted to rung 1, back at rung 3 from 2026-08-10; lessons log L-8). The 2026-08-18 golden-set failure was a near miss, caught before release | 2026-10-05 | No |
+| Routine stock and delivery answers | 3 | Facts sheet only; weekly sample | 52 | 2026-07-02 (a guessed delivery day reached a customer; demoted to rung 1, back at rung 3 from 2026-08-10; lessons log L-8). The 2026-08-10 golden-set failure (a goodwill credit offered for transit damage) was a near miss, caught before release | 2026-10-05 | No |
 | Goodwill credits for our own mistakes | 3 | Part of the routine-questions job, switched on 2026-08-10 when that job was back at rung 3; capped in the order system at Rs 300 per customer per month, on the customer's own account, every credit logged (decision D-8) | 18 credits since 2026-08-10, all within the rule | none | 2026-10-05 | Rung 3 only: the one capped exception; never higher |
 | Social posts | 1 | Voice still being refined; rung 2 at thirty in a row (decision D-10) | 11 | none | 2026-10-05 | Yes (public statement) |
 | Supplier reorders | 2 | Money out; the founder pays | 24 | none | 2026-11-02 | Yes (money out) |

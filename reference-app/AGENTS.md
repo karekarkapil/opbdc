@@ -14,6 +14,7 @@ The reorder page for Copper Pot Mixers (fictional), Bengaluru, which sells craft
 - `tests/`: `test_acceptance.py` (one or more tests per acceptance test, named `test_atN_...`), `test_delivery.py`, `test_orders.py`, `test_facts_sheet.py`.
 - `history/`: the brief for each step and its review record. Add one for every change you make.
 - `deploy/`: optional Dockerfile and deployment notes.
+- Outside this folder, two files belong to it: `../.github/workflows/reference-app-ci.yml`, its CI (GitHub runs workflows only from the repository root), and the facts sheet above, which `tests/test_facts_sheet.py` reads.
 
 ## Commands
 
@@ -24,6 +25,7 @@ python -m app.seed                 # creates data/copper_pot.db with demo data
 DEMO_MODE=1 uvicorn app.main:app --reload
 pytest                             # must pass before you hand anything back
 ruff check . && ruff format --check .
+mypy                               # type checks; settings in pyproject.toml
 ```
 
 ## Conventions
@@ -45,17 +47,18 @@ ruff check . && ruff format --check .
 - Never weaken, skip or delete a test to make it pass. If a test looks wrong, stop and ask.
 - Never add a dependency without pinning it in `requirements.txt` or `requirements-dev.txt` and saying why in your hand-back.
 - Never put secrets in code, facts or history. There are none in this project, and there should stay none.
-- Never edit files outside this folder.
+- Never edit files outside this folder, except the two listed under Layout, and those only after asking.
 
 ## Ask before you
 
 - change anything in `specs/` or `facts/facts.toml` (a fact changes in the facts sheet first);
+- edit the CI file or the facts sheet, the two files outside this folder;
 - change what a customer is shown about delivery days or cancelling;
 - add a page, a route or a table.
 
 ## Hand-back checklist
 
-Tests pass (paste the summary line), lint passes, the relevant `history/` brief has its review record, and any lesson learned is added below.
+Tests pass (paste the summary line), lint and type checks pass, the relevant `history/` brief has its review record, and any lesson learned is added below.
 
 ## Lessons
 
@@ -73,3 +76,6 @@ Tests pass (paste the summary line), lint passes, the relevant `history/` brief 
 - Parse only the section of a document you mean. The sheet's change-history table looked like a price list. (Brief 04.)
 - Pin what your pins pull in. Five pinned packages brought twelve unpinned ones. (Brief 05.)
 - Walk the running app against the acceptance tests, not only the test suite, and check the states between steps. After the cancel window closed, the order page dropped the cancel button but said nothing about what to do next; no test looked at that page in that state. (Brief 06.)
+- A fact typed into a template is invisible to the drift test. Render every fact a customer is told from the facts file, and test that changing the file changes the page. (Brief 07: the cut-off on the list and "free from two cases" on the review screen.)
+- When a file moves, search every file for its old path, history included, and record the move. (Brief 07: the CI file moved and five references went stale.)
+- A claim about the checks is checked like code. CI must watch every file the tests read, and run every check the docs promise. (Brief 07: the facts sheet did not trigger CI, and the promised type checks never ran.)

@@ -40,7 +40,8 @@ out there.
 
 ## 4. Trial
 [A free trial of 30 days, no card required.] At the end of the trial,
-[your account pauses until you choose a plan / describe what happens].
+[what happens, exactly as your facts sheet says it. Ledgerly's sheet does
+not say yet: ask the founder, add it to the sheet, then fill this in].
 We never start charging without asking you first.
 
 ## 5. Plans, prices and billing

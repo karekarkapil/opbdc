@@ -8,6 +8,8 @@ Last checked: 2026-09-15
 
 ## Entries (newest first)
 
+Selected entries shown; the gaps in numbering are entries left out of this example.
+
 ### L-9: Cafe proposal quantities too high for a new account
 - **Date:** 2026-08-31
 - **What happened:** the sales agent's overnight proposal for a four-outlet cafe chain suggested ten cases per outlet for the first month, scaled from our largest bar.
@@ -33,7 +35,7 @@ Last checked: 2026-09-15
 - **What happened:** two cracked bottles in a case delivered in heavy rain; the box had softened.
 - **Who or what:** packing (the part-time packer) and the delivery partner.
 - **Caught by:** customer.
-- **Cost:** a case replaced; a customer's weekend drinks.
+- **Cost:** the two bottles replaced, and a bar short of them for its weekend.
 - **Lesson:** monsoon deliveries need waterproof outer wrap.
 - **What changed:** "Packing and dispatch" playbook, step 6: plastic outer wrap June to September; damage tracker started.
 - **Trust ladder:** not an agent job (packing is done by a person, rung 0).

@@ -3,3 +3,17 @@
 pytest==9.1.1             # test runner
 httpx2==2.13.1            # used by the FastAPI test client (Starlette prefers it to httpx)
 ruff==0.16.9              # linter and formatter
+mypy==2.3.1               # type checker (settings in pyproject.toml)
+
+# Pulled in by the packages above, pinned too so every install is identical.
+# Regenerate with: pip install -r requirements-dev.txt in a fresh venv, then pip freeze.
+ast-serialize==0.11.2     # for mypy
+httpcore2==2.13.1         # for httpx2
+iniconfig==2.3.0          # for pytest
+librt==0.15.0             # for mypy
+mypy-extensions==1.1.0    # for mypy
+packaging==26.3           # for pytest
+pathspec==1.1.1           # for mypy
+pluggy==1.6.0             # for pytest
+pygments==2.21.0          # for pytest
+truststore==0.10.4        # for httpx2 and httpcore2

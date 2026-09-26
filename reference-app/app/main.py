@@ -8,9 +8,10 @@ import os
 import re
 import secrets
 import sqlite3
+from collections.abc import Callable
 from datetime import UTC, date, datetime
 from pathlib import Path
-from typing import Annotated
+from typing import Annotated, Any
 
 from fastapi import Depends, FastAPI, HTTPException, Request
 from fastapi import Path as UrlPart
@@ -48,7 +49,10 @@ class ChooseDemoBar(Exception):
 def get_conn(request: Request):
     path = request.app.state.db_path
     if not path.exists():
-        raise HTTPException(503, "The database has not been created. Run: python -m app.seed")
+        # The seed script fills the database with fictional bars: suggest it only for
+        # the demo. A live database is created without it (deploy/README.md).
+        how = " Run: python -m app.seed" if request.app.state.demo_mode else ""
+        raise HTTPException(503, "The database has not been created." + how)
     conn = db.connect(path)
     try:
         yield conn
@@ -111,6 +115,10 @@ def render(request: Request, template: str, status_code=200, **context):
     currency = state.facts.currency
     context.update(
         demo_mode=state.demo_mode,
+        # Facts the pages state, from the facts file, never typed into a template.
+        cutoff=state.facts.schedule.cutoff_label,
+        free_delivery_from=state.facts.free_delivery_from,
+        cancel_minutes=int(state.facts.cancel_window.total_seconds() // 60),
         pretend_now=request.cookies.get("demo_now", "") if state.demo_mode else "",
         money=lambda paise: format_money(paise, currency),
         long_date=long_date,
@@ -141,7 +149,8 @@ def review(order_id: OrderId, request: Request, account: Account, conn: Conn):
         raise HTTPException(404)
     quantities = {line.product_id: line.quantity for line in plan.lines}
     # Say up front if the old quantities cannot be confirmed as they are (for example,
-    # leaving out a discontinued flavour breaks a whole case), not after Confirm.
+    # leaving out a discontinued flavor breaks a whole case), not after Confirm, and
+    # show no total for them, since they cannot be placed.
     notice = ""
     if plan.lines:
         prefilled = {f"qty-{pid}": str(qty) for pid, qty in quantities.items()}
@@ -149,7 +158,8 @@ def review(order_id: OrderId, request: Request, account: Account, conn: Conn):
             orders.parse_quantities(prefilled, plan, request.app.state.facts)
         except orders.OrderError as problem:
             notice = str(problem)
-    return _review_page(request, account, plan, quantities, notice=notice)
+    total_for = None if notice else quantities
+    return _review_page(request, account, plan, total_for, notice=notice)
 
 
 async def confirm(order_id: OrderId, request: Request, account: Account, conn: Conn):
@@ -307,7 +317,7 @@ def health(conn: Conn):
 # Every page the app serves. test_at8_only_the_expected_routes_exist holds the same
 # list, so a new route is a decision recorded in the spec, not a side effect.
 # (Routes are listed here rather than with decorators so the whole app fits in one view.)
-ROUTES = [
+ROUTES: list[tuple[str, str, Callable[..., Any]]] = [
     ("GET", "/", home),
     ("GET", "/repeat/{order_id}", review),
     ("POST", "/repeat/{order_id}", confirm),

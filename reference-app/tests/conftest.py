@@ -1,7 +1,7 @@
 """Shared test fixtures: a small world of Bengaluru bars, products and past orders.
 
 Facts from the company's facts sheet: prices per 750 ml bottle, orders in whole
-cases of six (flavours can be mixed), cut-off Sunday 8 pm, a fixed delivery day
+cases of six (flavors can be mixed), cut-off Sunday 8 pm, a fixed delivery day
 by area, Monday to Thursday. Money is in paise (Rs 540 is 54000).
 
 The clock is fake and starts on Saturday 26 September 2026 at 10:00 in Bengaluru,

@@ -18,7 +18,7 @@ Turn the "Reorder in one tap" spec from Chapter 6 into three things the rest of 
 - Everything stays inside `reference-app/`. No git commands.
 - The spec's must-haves and no list are not to be widened. Where a decision is needed, record it in the spec under "Decisions made while building", with the reason.
 - Facts a customer might be told (cut-off, delivery day, cancel window) live in one facts file, never in code.
-- No login system. Sign-in is a managed service's job (Chapter 7); the reference app gets a clearly labelled demo mode instead.
+- No login system. Sign-in is a managed service's job (Chapter 7); the reference app gets a clearly labeled demo mode instead.
 - Pinned dependencies only; as few as will do the job.
 - No em-dash or en-dash characters, no Cyrillic characters, in any file.
 

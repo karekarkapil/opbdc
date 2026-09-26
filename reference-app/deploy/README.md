@@ -25,18 +25,19 @@ Environment variables:
 
 ## Before real customers
 
-This is a reference app. Four things stand between it and a real bar's orders:
+This is a reference app. Five things stand between it and a real bar's orders:
 
 1. **Sign-in.** Connect a managed login provider in `current_account` in `app/main.py`, the one seam for it (spec B11). Do not build passwords. Keep its session cookie `SameSite=Lax` or `Strict`.
 2. **Demo mode off** on the live site. Without a login provider and without demo mode, every page says sign-in is not connected (a 503), which is the safe failure.
 3. **A disk that survives deploys.** SQLite is a single file. Many managed platforms wipe the app's own disk on every deploy, which would lose every order. Either attach a persistent volume and point `COPPER_POT_DB` at it, or move to the platform's managed database with automatic backups. Moving means changing `app/db.py`, the only file that talks to the database, and running the same tests: a good brief for a coding agent.
-4. **Backups you have restored.** Chapter 9: a backup you have never restored is a hope. Once a quarter, restore into a test copy and open the reorder page against it.
+4. **A live database created without the seed script.** `python -m app.seed` fills the database with fictional bars and orders; it is for demos and previews only. For the live site, create an empty database with `python -c "from app import db; db.connect('/data/copper_pot.db').close()"` (use your `COPPER_POT_DB` path; its folder must exist), then load your real accounts and products, with prices from the facts sheet, through a script you have reviewed. The page itself never adds accounts or products (spec part 7).
+5. **Backups you have restored.** Chapter 9: a backup you have never restored is a hope. Once a quarter, restore into a test copy and open the reorder page against it.
 
 ## The six steps, for this app
 
 | Step (Chapter 9) | Here |
 |---|---|
-| 1. Automated checks | `.github/workflows/ci.yml`: secret scan, lint, all tests including every acceptance test, known vulnerabilities in dependencies. Copy it to the repository root's `.github/workflows/` to switch it on. Make it a required check before merging. |
+| 1. Automated checks | [`../../.github/workflows/reference-app-ci.yml`](../../.github/workflows/reference-app-ci.yml), at the root of the companion repository, where GitHub runs it: secret scan, lint, type checks, all tests including every acceptance test, known vulnerabilities in dependencies. If you copy this folder out as its own repository, move the file to that repository's `.github/workflows/` (its opening comment lists the lines to change). Make it a required check before merging. |
 | 2. A preview | Turn on the platform's preview for each change. Previews run with `DEMO_MODE=1` and their own database, seeded with `python -m app.seed`, never a copy of real orders. |
 | 3. Your review | Open the preview on a phone and walk the acceptance tests (the README says how). For a change to the delivery rule or the facts, walk AT3 at a pretend Sunday 9 pm. |
 | 4. Release | You approve. Riskier changes (the delivery rule, `facts/facts.toml`, the database) go out early in the week, not before the Sunday 8 pm cut-off, when most orders arrive. |
@@ -76,6 +77,6 @@ The 2025 draft built this machinery by hand. It still works; most founders no lo
 |---|---|
 | A multi-stage Dockerfile for the backend, another for a separate frontend served by Nginx | One single-stage Dockerfile: the pages are rendered by the app itself, and nothing is compiled, so there is no build stage and no second server. Base image pinned to a digest; non-root user kept. |
 | Docker Compose with backend, frontend and a database server | One service and a volume. SQLite needs no server. |
-| A pipeline that tested and then deployed | `ci.yml` does the checks. Deploying, previews and rollback are the platform's job. |
+| A pipeline that tested and then deployed | `reference-app-ci.yml` does the checks. Deploying, previews and rollback are the platform's job. |
 | Visual regression tests that compared screenshots | Walking the acceptance tests on a phone at each review. Screenshot comparison is worth adding once the pages change often enough to justify it. |
 | Monitoring you assembled yourself | The platform's logs and alerts, the five watches above, and an agent that reads them each morning with read-only access. |

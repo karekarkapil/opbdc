@@ -12,7 +12,7 @@
   </fieldset>
   <label for="pretend_now">Pretend the time is (Bengaluru time), or leave empty for the real time</label>
   <input id="pretend_now" name="pretend_now" type="datetime-local" value="{{ pretend_now }}">
-  <p class="hint">To see the cut-off (AT3), pick a Sunday after 8 pm, or 1 am on a Monday. To see the cancel window close (AT6), confirm an order, then come back and set a time more than 30 minutes later.</p>
+  <p class="hint">To see the cut-off (AT3), pick a time after the {{ cutoff }} cut-off, or 1 am the next day. To see the cancel window close (AT6), confirm an order, then come back and set a time more than {{ cancel_minutes }} minutes later.</p>
   <button type="submit" class="button primary wide">Continue</button>
 </form>
 {% endblock %}

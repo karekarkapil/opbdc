@@ -2,7 +2,7 @@
 {% block main %}
 <h1>Your last orders</h1>
 {% if orders %}
-<p class="hint">Tap Repeat, change any quantity, then confirm. Order by Sunday 8 pm for delivery that week.</p>
+<p class="hint">Tap Repeat, change any quantity, then confirm. Order by {{ cutoff }} for delivery that week.</p>
 <ul class="orders">
   {% for o in orders %}
   <li class="card" data-order-id="{{ o.id }}">

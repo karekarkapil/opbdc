@@ -46,7 +46,7 @@ Missing or stale data: [list, or "none"]
 | Customers | New customers this week, and where they came from | [N or more] | [N] | [none for N weeks] | [CRM or customer file] |
 | Money owed | Invoices overdue, by amount and age | [none over N days] | [any over N days] | [any over N days, or total above x] | [accounting] |
 | Support | Confirmed resolutions, escalations waiting for you, re-contact rate | [above N%, none waiting over N hours] | [...] | [...] | [support tool] |
-| System | Uptime, errors and anything the morning summary flagged | [no flags] | [one flag] | [outage or error spike] | [monitoring, morning summary] |
+| System | Uptime, errors and anything the morning summary flagged | [no flags] | [one or more flags] | [outage or error spike] | [monitoring, morning summary] |
 | Agents | Spend this month against budget; any agent over its limit | [on pace] | [above N% of pace] | [any agent over limit] | [provider usage pages] |
 | The one number | The measure that best shows your product is doing its job | [...] | [...] | [...] | [...] |
 
@@ -61,8 +61,8 @@ Copper Pot Mixers is a fictional company used for illustration. These are its fo
 | Margin | gross margin 55% or more per case | 45% to under 55% | under 45% |
 | Customers | 2 or more new bars this week | 1 new bar this week, or none for one or two weeks | none for 3 weeks in a row |
 | Money owed | nothing overdue (an invoice is overdue 48 hours after delivery) | anything overdue up to 7 days, and Rs 20,000 or less in total | anything overdue more than 7 days, or more than Rs 20,000 (about $240) in total |
-| Support | 90% or more confirmed resolutions, and nothing waiting over 4 hours | 80% to under 90%, or anything waiting 4 to 12 hours | under 80%, or anything waiting over 12 hours |
-| System | order page up; no flags | one flag | order page down, or no orders when normally expected |
+| Support | 90% or more confirmed resolutions, and nothing waiting over 4 hours | 80% to under 90%, or anything waiting over 4 and up to 12 hours | under 80%, or anything waiting over 12 hours |
+| System | order page up; no flags | order page up; one or more flags | order page down, or no orders when normally expected |
 | Agents | spend up to 20% ahead of pace | more than 20% ahead of pace, and no agent over its limit | any agent over its limit |
 | The one number | 50% or more of repeat orders through "Reorder in one tap" | 35% to under 50% | under 35% |
 

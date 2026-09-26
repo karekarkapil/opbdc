@@ -111,7 +111,7 @@ Three candidate problems came out of the research and ten conversations:
 
 **The assumption that would kill it:** that bar managers will agree to a standing par level instead of ordering on impulse. **Test this week:** offer a standing order to the four bars that complained most, and count how many say yes and keep it for a month.
 
-*What happened next, in the example company's own [decision log](../context-kit/examples/beverage-company/decision-log.md): the standing order ran as a fixed weekly subscription and was retired in February 2026 (D-6) after two sign-ups in three months, because every bar orders to its own stock level. The kill assumption was the right one to test. The reorder page (D-9), built for the way bars actually order, took its place.*
+*What happened next, in the example company's own [decision log](../context-kit/examples/beverage-company/decision-log.md): the standing order ran as a fixed weekly subscription and was retired in April 2026 (D-6) after two sign-ups in three months, because every bar orders to its own stock level. The kill assumption was the right one to test. The reorder page (D-9), built for the way bars actually order, took its place.*
 
 ## Related files
 

@@ -8,6 +8,8 @@ Last checked: 2026-09-12
 
 ## Entries (newest first)
 
+Selected entries shown; the gaps in numbering are entries left out of this example.
+
 ### L-9: Golden month "fixed" by editing the answer key
 - **Date:** 2026-08-14
 - **What happened:** asked to fix a categorization bug, the coding agent changed the expected answer in a golden month so the test passed.

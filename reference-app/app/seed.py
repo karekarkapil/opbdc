@@ -26,8 +26,9 @@ PRODUCTS = [
     ("Smoked Chilli and Lime", 520, False),
     ("Tender Coconut and Lemongrass", 560, False),
     ("Jaggery Cola Syrup", 480, False),
-    # Not on the facts sheet, because it is no longer sold. It is here so the
-    # demo can show AT4 (a discontinued product is left out, with a note).
+    # Listed on the facts sheet as "No longer sold", with no price (the price here is
+    # only for old orders). It is here so the demo can show AT4 (a discontinued
+    # product is left out, with a note).
     ("Guava and Pink Salt", 520, True),
 ]
 TERMS = "Due on delivery"  # the facts sheet: no credit terms
@@ -60,7 +61,7 @@ def seed(path: Path, now: datetime) -> None:
         )  # fmt: skip
 
     # The Tin Lantern: a weekly regular, ordering at 1 am after closing. The newest
-    # order includes a flavour that has since been discontinued (AT4).
+    # order includes a flavor that has since been discontinued (AT4).
     past(lantern, "Indiranagar", 34, 1, (pineapple, 6), (kokum, 6))
     past(lantern, "Indiranagar", 27, 1, (pineapple, 6), (kokum, 6))
     past(lantern, "Indiranagar", 20, 1, (pineapple, 6), (chilli, 6))

@@ -82,13 +82,14 @@ def test_all_zero_quantities_are_refused(client, world, conn):
 
 
 def test_orders_go_out_in_whole_cases(client, world, conn):
-    """B8: the facts sheet sells by the case of six; flavours can be mixed."""
+    """B8: the facts sheet sells by the case of six; flavors can be mixed."""
     sign_in(client, world.lantern)
     before = count_orders(conn)
     # The discontinued guava is left out, so repeating as it was leaves 9 bottles.
     response = confirm(client, world.lantern_orders[4], {world.pineapple: 6, world.coconut: 3})
     assert response.status_code == 400
     assert "whole cases of 6" in response.text
+    assert "flavors can be mixed" in response.text
     assert "9 bottles" in response.text
     assert count_orders(conn) == before
     # A mixed case is fine.
@@ -102,6 +103,7 @@ def test_a_quantity_over_the_limit_is_refused(client, world, conn):
     response = confirm(client, world.lantern_orders[2], {world.pineapple: 600, world.chilli: 6})
     assert response.status_code == 400
     assert "60" in response.text
+    assert "bottles of each flavor" in response.text
     assert count_orders(conn) == before
 
 
@@ -148,6 +150,51 @@ def test_the_review_screen_shows_the_total_and_can_update_it(client, world, conn
     assert updated.status_code == 200
     assert "Rs 9,600" in updated.text
     assert count_orders(conn) == before
+
+
+def test_no_total_is_shown_for_quantities_that_cannot_be_placed(client, world):
+    """Found in review 2: leaving out the discontinued guava makes 9 bottles, which cannot
+    be confirmed, yet the review screen showed a total for them."""
+    sign_in(client, world.lantern)
+    placeable = client.get(f"/repeat/{world.lantern_orders[2]}")  # control: two whole cases
+    assert "Total at these quantities" in placeable.text
+    review = client.get(f"/repeat/{world.lantern_orders[4]}")
+    assert "Before you confirm" in review.text
+    assert "Total at these quantities" not in review.text
+
+
+def test_the_pages_take_the_cutoff_and_free_delivery_from_the_facts_file(world, clock, tmp_path):
+    """Found in review 2: the cut-off on the list and "free from two cases" on the review
+    screen were typed into the templates, where the facts-sheet guard cannot see them.
+    Change both in a copy of the facts file, and the pages must follow."""
+    from fastapi.testclient import TestClient
+
+    from app.facts import DEFAULT_FACTS
+    from app.main import create_app
+
+    text = DEFAULT_FACTS.read_text(encoding="utf-8")
+    changed = (
+        text.replace('cutoff_weekday = "Sunday"', 'cutoff_weekday = "Saturday"')
+        .replace('cutoff_time = "20:00"', 'cutoff_time = "18:00"')
+        .replace("free_from_cases = 2", "free_from_cases = 3")
+    )
+    for new_value in ['"Saturday"\n', '"18:00"', "free_from_cases = 3"]:
+        assert new_value in changed  # the copy really differs
+    copy = tmp_path / "facts.toml"
+    copy.write_text(changed, encoding="utf-8")
+
+    # The real facts file first, as a control, then the changed copy.
+    for facts_path, cutoff, free_from in [
+        (DEFAULT_FACTS, "Sunday 8 pm", "two"),
+        (copy, "Saturday 6 pm", "three"),
+    ]:
+        application = create_app(world.db_path, facts_path=facts_path, demo_mode=True)
+        application.state.clock = clock
+        with TestClient(application) as browser:
+            sign_in(browser, world.banyan)
+            assert f"Order by {cutoff} for delivery that week" in browser.get("/").text
+            one_case = browser.get(f"/repeat/{world.banyan_orders[1]}")  # delivery charged
+            assert f"free from {free_from} cases" in one_case.text
 
 
 def test_an_order_of_only_discontinued_products_cannot_be_repeated(client, world, conn):
@@ -337,6 +384,26 @@ def test_without_demo_mode_the_app_asks_for_a_real_login_provider(world):
         assert page.status_code == 503
         assert "sign-in" in page.text.lower()
         assert plain.get("/demo").status_code == 404
+
+
+def test_a_missing_database_suggests_the_seed_script_only_in_demo_mode(tmp_path):
+    """Found in review 2: outside demo mode, the error pointed at the script that fills
+    the database with fictional bars."""
+    from fastapi.testclient import TestClient
+
+    from app.main import create_app
+
+    missing = tmp_path / "missing.db"
+    with TestClient(create_app(missing, demo_mode=True)) as demo:
+        page = demo.get("/healthz")
+        assert page.status_code == 503
+        assert "python -m app.seed" in page.text  # control: the demo still says how
+    with TestClient(create_app(missing, demo_mode=False)) as live:
+        page = live.get("/healthz")
+        assert page.status_code == 503
+        assert "database" in page.text
+        assert "seed" not in page.text
+    assert not missing.exists()
 
 
 def test_demo_mode_without_a_chosen_bar_goes_to_the_demo_page(client):
