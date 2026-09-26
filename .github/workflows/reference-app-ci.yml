@@ -19,6 +19,8 @@ name: reference-app CI
 # The facts sheet is here because tests/test_facts_sheet.py reads it: a change to
 # the sheet must run the test that catches the app drifting from it.
 on:
+  # Run it by hand from the Actions tab, for example after forking.
+  workflow_dispatch:
   push:
     branches: [main]
     paths:
