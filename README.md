@@ -1,6 +1,6 @@
 # 1pbdc companion repo (working copy)
 
-Everything the book points to with *In the repo:*. This folder becomes a public GitHub repository at launch (name and visibility: see plan/AUTHOR_QUESTIONS.md, item 15).
+Everything the book points to with *In the repo:*. Published as the public repository **https://github.com/karekarkapil/opbdc** (`git@github.com:karekarkapil/opbdc.git`), default branch `main`. The book links to files here by path; do not rename or move a file without updating the manuscript and running `tools/check_repo_links.py`.
 
 Planned layout:
 - `briefs/`: agent briefs by role (research, build, review, design, marketing, support, sales, finance, legal, ops).
