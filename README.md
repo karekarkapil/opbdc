@@ -68,6 +68,6 @@ The book links to files here by path, so files are not renamed or moved without 
 
 ## License
 
-License: to be added before public release.
+Everything in this repository, the templates, briefs, playbooks and the reference app, is released under the [MIT License](LICENSE). Use it, adapt it and build your own companies with it; keep the copyright notice in copies of the repository.
 
-Until a license file is published in this repository, no license is granted beyond reading and personal use alongside the book. The example companies are inventions for teaching.
+Two cautions that the license does not change. The legal templates in `playbooks/legal-templates/` are starting points only and must be reviewed by a qualified lawyer where you operate before you use them. And the example companies, Copper Pot Mixers and Ledgerly, are inventions for teaching: any resemblance to a real business is a coincidence.
