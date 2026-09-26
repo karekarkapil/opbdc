@@ -41,11 +41,13 @@ The first five come straight from Chapter 13. The rest are common additions; kee
 | A new recurring charge of any size | Common addition |
 | A round-number transfer, or a transfer made at a weekend or late at night | Common addition |
 | An expense more than [N] times its usual monthly amount | Common addition |
-| A refund or credit you do not remember approving | Common addition |
+| A refund or credit you do not remember approving, or a support agent's goodwill credit outside its limit or its log | Common addition |
 | A transaction that fits no categorization rule | Common addition |
 | Agent card spend over its limit, or any charge on it you did not expect | Common addition |
 
 Each flag is shown with: the transaction, why it was flagged, and the agent's suggestion.
+
+**Set the overdue flag to your own payment terms.** Thirty days is Chapter 13's example for a business that gives credit terms. A business with none flags sooner: Copper Pot Mixers, which is paid on delivery, treats an invoice as overdue 48 hours after delivery (its facts sheet), so its flag is "any invoice overdue", and its CEO dashboard turns red after seven days.
 
 ## Your four steps
 
@@ -84,7 +86,7 @@ Prepared by: finance agent, [date]. Signed off by: [founder], [date].
 2. Revenue, and share that repeats: [amount], [N]%
 3. Gross margin per [unit or customer], incl. agent costs: [amount or %]
 4. Cost to acquire a customer, and payback: [amount], [N] months
-5. Money owed to you: [total], of which over 30 days: [amount]
+5. Money owed to you: [total], of which overdue by your terms: [amount]
 
 ## Forecast against actual
 | | Forecast | Actual | Difference | Why |

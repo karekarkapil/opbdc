@@ -2,7 +2,7 @@
 
 *Companion to Chapter 3, "Context Is the Company", of* 1 Person, Billion Dollar Conglomerate *(2026 edition). Last reviewed: September 2026.*
 
-*Illustration: Copper Pot Mixers is a fictional company. Prices and policies are invented.*
+*Illustration: Copper Pot Mixers is a fictional company. Prices and policies are invented. Where the companion gives a dollar figure for orientation, it uses about Rs 83 to the US dollar; see the [README](README.md).*
 
 Last checked: 2026-09-01
 Rule for agents: state only what is written here. If a fact is missing, say "I don't know, let me find out" and escalate to Meera.
@@ -18,7 +18,7 @@ All mixers come in a 750 ml glass bottle, which makes 25 serves at 30 ml per dri
 | Tender Coconut and Lemongrass | Light, floral | Rs 560 | |
 | Jaggery Cola Syrup | Spiced cola base | Rs 480 | |
 
-Rs 540 is about $6.50; prices are in Indian rupees and include applicable taxes as shown on the invoice.
+Prices are in Indian rupees and include applicable taxes as shown on the invoice. Quote prices to customers in rupees only.
 
 ## What we do not claim
 - Our mixers contain no alcohol. We do not advise on the alcohol content of finished drinks.
@@ -56,10 +56,11 @@ Rs 540 is about $6.50; prices are in Indian rupees and include applicable taxes 
 - Invoices: sent by email when the order is dispatched, with a payment link.
 
 ## Returns, refunds and problems
-- Damaged or broken bottles: replaced free if reported within 48 hours of delivery with a photo. Every damaged-product complaint goes to Meera.
+- Damaged or broken bottles: replaced free if reported within 48 hours of delivery with a photo. Every damaged-product complaint goes to Meera: the assistant collects the photo and details, prepares the replacement order for her approval, and tells the customer Meera will reply the same working day. Meera confirms every replacement herself.
 - Unopened bottles: can be exchanged for another flavor within 7 days of delivery.
 - Opened bottles cannot be returned.
-- Refunds and credits: only Meera approves them. Agents never promise one.
+- Refunds: only Meera approves them. Agents never promise one.
+- Goodwill credit: when a delivery goes wrong through our own mistake (a missed van, a wrong item), the assistant may add a credit of up to Rs 300 per customer per month to the customer's account, taken off the next invoice. Not for damage in transit (see above). Any larger credit is Meera's decision.
 
 ## Offers
 - Tasting kit for new bars and cafes: five 100 ml bottles, one of each flavor, plus a one-page staff recipe card. Free, one per business.
@@ -75,6 +76,7 @@ Rs 540 is about $6.50; prices are in Indian rupees and include applicable taxes 
 ## Change history
 | Date | What changed | Old value | New value |
 |---|---|---|---|
+| 2026-08-10 | Goodwill credit for our own mistakes | Meera only | Assistant may add up to Rs 300 per customer per month (decision D-8) |
 | 2026-07-01 | Tender Coconut and Lemongrass price | Rs 520 | Rs 560 |
 | 2026-04-15 | Delivery charge threshold | free for three cases | free for two cases |
 | 2026-03-20 | Weekly cut-off | Saturday 6 pm | Sunday 8 pm |

@@ -1,6 +1,6 @@
 # Data room checklist
 
-*Companion to Chapter 19, "Building for Value", of* 1 Person, Billion Dollar Conglomerate *(2026 edition). Also used in Chapters 13, 16 and 17. Last reviewed: September 2026.*
+*Companion to Chapter 19, "Building for Value", of* 1 Person, Billion Dollar Conglomerate *(2026 edition). Last reviewed: September 2026.*
 
 ## What this is
 
@@ -96,13 +96,21 @@ Reports use counts and shares; they never include customers' personal data unles
 | [ ] | Absence note: how someone else reaches the platforms, the runbook and the customers | Quarterly |
 | [ ] | Which relationships, judgments and knowledge still live only in you (key-person risk), and the plan to write them down | Quarterly |
 
+### 7. Value: path and moats (Chapter 19)
+
+| Done | Item | Kept current |
+|---|---|---|
+| [ ] | **The path decision:** cash flow, asset or held in the portfolio, with its date and reason, from the decision log | Yearly, and on change |
+| [ ] | **Moat audits, last four quarters** ([moat-audit.md](../../playbooks/moat-audit.md)): the scores, the evidence, and what was deepened | Quarterly |
+| [ ] | Evidence behind the strongest moats: owned audience (list size, repeat orders without asking), reputation (reviews, referrals, complaints handled), relationships | Quarterly |
+
 ---
 
 ## The brief for the agent that maintains it
 
 > **Goal:** Keep this company's data room complete and current, so that it could be shared with a serious buyer within a week. Run after each monthly close is signed off.
 >
-> **Context:** Read this checklist, the latest signed monthly close, the CEO dashboard history, the context kit's last-checked dates, the permission matrix, the incident log and the compliance calendar. Company: [name]. Data room folder: [location].
+> **Context:** Read this checklist, the latest signed monthly close, the CEO dashboard history, the context kit's last-checked dates, the permission matrix, the incident log, the compliance calendar, the decision log (for the path decision) and the moat audits. Company: [name]. Data room folder: [location].
 >
 > **Constraints:** Read-only access to the source systems; write access only to the data-room folder. Never copy customers' personal data, card or bank details, passwords or keys into the data room; concentration reports use counts and shares only. Never share, send or grant access to the data room to anyone. Never include another company's documents. Do not edit source documents; if one is wrong or missing, report it.
 >

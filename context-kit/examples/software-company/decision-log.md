@@ -15,6 +15,14 @@ Rule for agents: do not reverse a decision logged here. If a task seems to requi
 
 Selected entries shown; the gaps in numbering are entries left out of this example.
 
+### D-13: One fixed reply for every tax question
+- **Date:** 2026-07-23
+- **Decision:** the support agent answers every tax question with one fixed reply, word for word: "We can't advise on tax. Your accountant can, and Ledgerly can export everything they need." Billing, refund and tax questions drop to rung 1 (the founder sends every reply) until the fixed reply is in place and tested, then climb one rung at a time.
+- **Reason:** the rule in D-7 was not enough: on 2026-07-22 the agent still told a customer a meal was "probably deductible" (lessons log L-7). A rule states the boundary; a fixed reply leaves nothing to improvise.
+- **Alternatives considered:** a longer rule with examples (rejected: the agent paraphrased around the last one).
+- **Revisit if:** customers repeatedly ask a tax-adjacent question the fixed reply does not fit.
+- **Status:** active. **Files updated:** support instructions, voice guide "Never" list, support golden set (three tax cases), playbooks index.
+
 ### D-12: Bookkeeper plan price rises to $12 per client
 - **Date:** 2026-07-10 (effective 2026-08-01, existing customers from 2026-10-01 with 60 days' notice)
 - **Decision:** raise the Bookkeeper plan from $10 to $12 per client per month.
@@ -32,9 +40,9 @@ Selected entries shown; the gaps in numbering are entries left out of this examp
 
 ### D-7: Support agent never advises on tax
 - **Date:** 2026-04-02
-- **Decision:** the support agent answers tax questions with a fixed reply pointing to an accountant.
+- **Decision:** the support agent never gives tax advice or an opinion on tax treatment; it points the customer to their accountant.
 - **Reason:** we are not qualified, and a wrong answer creates a liability for the customer and for us.
-- **Status:** active. **Files updated:** support instructions, voice guide.
+- **Status:** active; the wording of the reply is fixed by D-13. **Files updated:** support instructions, voice guide.
 
 ### D-5: Cash-flow prediction removed
 - **Date:** 2026-03-30

@@ -77,7 +77,7 @@ verification, questions.]
 
 ## Brief for the agent that prepares it
 
-> **Goal:** Prepare the weekly operating review pre-read for [Company name] by [Sunday 8 pm], so the founder can spend the hour deciding, not gathering.
+> **Goal:** Prepare the weekly operating review pre-read for [Company name] by [Sunday 5 pm], so the founder can spend the hour deciding, not gathering.
 >
 > **Context:** Read the dashboard data, every agent's escalation queue and logs for the past seven days, the trust ladder file, the facts sheet, the decision log, the lessons log, last week's pre-read and its decisions, and the backlog.
 >
@@ -117,7 +117,7 @@ verification, questions.]
 
 ## Portfolio variant (Chapter 17)
 
-With several companies, run one portfolio review instead of several full reviews. About ninety minutes for three companies.
+With several companies, run one portfolio review instead of several full reviews. About seventy minutes for three companies.
 
 | # | Item | Time | What you do |
 |---|---|---|---|

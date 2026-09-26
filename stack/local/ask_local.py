@@ -4,8 +4,11 @@ Companion to Chapter 2 of "1 Person, Billion Dollar Conglomerate" (2026 edition)
 Last reviewed: September 2026. A sketch to adapt, not a product.
 
 It posts to a local runtime's OpenAI-compatible chat endpoint. The default address
-is Ollama's documented default; check your runtime's current documentation.
-Python 3 only, no extra packages.
+is Ollama's documented default (verified 2026-09-26 against a local server);
+check your runtime's current documentation. Python 3 only, no extra packages.
+
+Some reasoning models put their thinking text in the answer. If yours does, strip
+it, or choose a model setting that leaves it out, before a script checks the output.
 
 Usage:
   python3 ask_local.py --model MODEL_NAME --instructions AGENTS.md \
@@ -15,6 +18,9 @@ Usage:
 Batch use (one item per line, e.g. tagging customer messages):
   python3 ask_local.py --model MODEL_NAME --instructions tagging.md \
       --each messages.txt > tags.txt
+In batch mode every input line gets exactly one output line (a blank line for a
+blank input, "ERROR" for a failed item), so line N of the output answers line N
+of the input.
 """
 import argparse
 import json
@@ -50,13 +56,11 @@ def main():
     p.add_argument("--model", required=True, help="the exact, pinned model name you tested")
     p.add_argument("--instructions", required=True, help="the standing instruction file, e.g. AGENTS.md")
     p.add_argument("--context", nargs="*", default=[], help="context-kit files this job needs, and only those")
-    p.add_argument("--brief", help="a file holding the six-part brief for one job")
-    p.add_argument("--each", help="a file with one item per line; the instructions are applied to each")
+    mode = p.add_mutually_exclusive_group(required=True)
+    mode.add_argument("--brief", help="a file holding the six-part brief for one job")
+    mode.add_argument("--each", help="a file with one item per line; the instructions are applied to each")
     p.add_argument("--temperature", type=float, default=0.0, help="0 for repeatable batch jobs")
     a = p.parse_args()
-
-    if not a.brief and not a.each:
-        p.error("give --brief for one job or --each for a batch")
 
     # Standing instructions first, then the context files, each labeled with its path,
     # so the model (and you, reading a log) can tell where every rule came from.
@@ -73,6 +77,7 @@ def main():
         for line in f:
             item = line.strip()
             if not item:
+                print("")  # keep output lines aligned with input lines
                 continue
             # Items are data, not instructions: say so, every time.
             user = ("Process the item below according to your instructions. "

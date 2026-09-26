@@ -61,7 +61,7 @@ The agent does not record a payment, does not update the supplier's bank details
 | Date | What changed | Items | Passed | Failed items | Decision |
 |---|---|---|---|---|---|
 | [YYYY-MM-DD] | [e.g. new categorization rule] | [7] | [7] | [none] | [Go live] |
-| 2026-09-02 | Added rule: printing is cost of sales | 7 | 6 | 3 (flag missed: subscription increase) | Added "flag any recurring charge that changed" to instructions; re-ran, 7 of 7 |
+| 2026-09-02 | Added rule: printing is cost of sales | 7 | 6 | item 3 (flag missed: subscription increase) | Added "flag any recurring charge that changed" to instructions; re-ran, 7 of 7 |
 | | | | | | |
 
 ## Related files

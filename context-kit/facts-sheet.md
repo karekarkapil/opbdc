@@ -10,7 +10,7 @@ The single source of truth for everything an agent might state to a customer: pr
 
 - Every customer-facing agent's instructions say: "Answer factual questions only from the facts sheet. If it is not there, say so and offer a person."
 - Write each fact **once**. The voice guide, playbooks and marketing drafts point here; they do not repeat the number.
-- Give every section a "Last checked" date. Prices and delivery rules go stale fastest.
+- Keep one "Last checked" date at the top, and re-read the whole file before you change it. Prices and delivery rules go stale fastest.
 - Change a fact here **before** you announce it anywhere else.
 - Review monthly, line by line.
 
@@ -58,7 +58,8 @@ Rule for agents: state only what is written here. If a fact is missing, say "I d
 ## Returns, refunds and problems
 - Damaged or faulty: [what to do, time limit, evidence needed]
 - Returns: [conditions]
-- Refunds and credits: [who approves; agents never promise one beyond this rule]
+- Refunds: [who approves; agents never promise one]
+- Goodwill credit, if you allow one: [the fixed limit per customer per period, for which kinds of our own mistakes, applied to the customer's own account and logged]. Anything above it is the founder's decision.
 
 ## Offers and discounts
 - Current published offers: [offer, dates] (or "none")

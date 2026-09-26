@@ -6,7 +6,7 @@
 
 ## The company in one paragraph
 
-Copper Pot Mixers is a small company in Bengaluru, India, selling craft cocktail mixers (non-alcoholic syrups and mixers) to independent bars and cafes with one to five outlets. It was founded in 2025. The founder, Meera, runs it with a staff of agents, a part-time packer, a delivery partner and an accountant who reviews the books every quarter. It is the beverage company the book uses for illustrations: the tasting-kit brief in Chapter 3, the trust ladder in Chapter 4, the reorder spec in Chapter 6, the pineapple campaign in Chapter 11 and the four-outlet cafe proposal in Chapter 12.
+Copper Pot Mixers is a small company in Bengaluru, India, selling craft cocktail mixers (non-alcoholic syrups and mixers) to independent bars and cafes with one to five outlets. It was founded in 2025. The founder, Meera, runs it with a staff of agents, a part-time packer, a delivery partner and an accountant who reviews the books every quarter. It is the beverage company the book uses for illustrations: the tasting-kit brief in Chapter 3, the trust ladder in Chapter 4, the reorder spec in Chapter 6, the pineapple campaign in Chapter 11 (the generated-image version the chapter warns against; this kit's voice guide and design system require real photographs) and the four-outlet cafe proposal in Chapter 12.
 
 ## The ten files
 
@@ -23,8 +23,8 @@ Copper Pot Mixers is a small company in Bengaluru, India, selling craft cocktail
 | [`agent-instructions.md`](agent-instructions.md) | The support desk's standing rules, on one page |
 | [`lessons-log.md`](lessons-log.md) | Each lesson ends with the file that changed |
 
-The design system for this company is the worked example in [`../../design-system.md`](../../design-system.md).
+The design system for this company is not in this folder: it is the worked example in [`../../design-system.md`](../../design-system.md), in the section "Example: Copper Pot Mixers".
 
 ## Currency
 
-Prices are in Indian rupees. For orientation, Rs 540 is about $6.50 at the exchange rate used when this example was written; the rate moves, so treat it as a rough guide only.
+Prices are in Indian rupees. Where the companion gives a dollar figure for orientation, it uses about Rs 83 to the US dollar (so Rs 540 is about $6.50). The rate moves, so treat it as a rough guide only. Agents quote customers in rupees only.

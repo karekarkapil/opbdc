@@ -1,6 +1,6 @@
 # Permission matrix
 
-*Companion to Chapter 2, "Your Agent Stack", of* 1 Person, Billion Dollar Conglomerate *(2026 edition). Also used in Chapters 4, 14 and 17. Last reviewed: September 2026.*
+*Companion to Chapter 2, "Your Agent Stack", of* 1 Person, Billion Dollar Conglomerate *(2026 edition). Chapters 14, 16, 17 and 19 refer back to it. Last reviewed: September 2026.*
 
 ## What this is
 
@@ -39,7 +39,7 @@ Last checked: [YYYY-MM-DD] by [name]
 ## Rules the matrix must satisfy
 
 - [ ] No agent uses the founder's personal account, password or main card.
-- [ ] No agent that reads untrusted content (the web, email, customer messages, supplier documents) also holds the keys to money or sensitive data. This is "separation of reading and power" (Chapter 14).
+- [ ] No agent that reads untrusted content (the web, email, customer messages, supplier documents) also holds the keys to money or sensitive data. This is "separation of reading and power" (Chapter 14). The one exception worth allowing (Chapters 2, 10, 12 and 14): a small, capped credit on the customer's own account, such as a support agent's goodwill credit, and even that is logged. Never a refund, a card or a payment out.
 - [ ] No secret (password, key, card number) appears in any instruction file, prompt or context file. Secrets live in a secrets store.
 - [ ] Every connector comes from the system's own maker, or from a source you have read and pinned.
 - [ ] Every row with a write permission leaves a log you can read later.
@@ -55,20 +55,21 @@ Last checked: [YYYY-MM-DD] by [name]
 
 Last checked: 2026-09-01 by the founder
 
-| Agent | Connector / system | Read | Write | Delete | Needs your approval | Spend cap | Rung |
-|---|---|---|---|---|---|---|---|
-| Inbox sorter | Company email (official connector) | Incoming mail to the orders address | Labels and folders only | Nothing | Nothing (sorting only) | Model usage cap per month | 4 |
-| Support agent | Order system | Orders and tracking for the customer in the conversation only | Address change before dispatch; return label for a damaged bottle; goodwill credit up to Rs 300 (about $3.60) | Nothing | Any refund, any credit above Rs 300, any exception to the facts sheet | Model usage cap per month; credit total per week | 3 |
-| Support agent | Facts sheet and policies (read-only folder) | All | Nothing | Nothing | Not applicable | | 3 |
-| Finance agent | Accounting software | All ledgers and reports | Categorize, match, draft invoices and reminders | Nothing | Sending any reminder to a key customer; any payment (the agent has no payment authority at all) | None needed: it cannot spend | 1 to 3 by job |
-| Finance agent | Bank feed | Transactions, read-only | Nothing | Nothing | Not applicable | | 2 |
-| Purchasing agent | Supplier email and portal | Supplier quotes, stock levels | Draft purchase orders | Nothing | Every purchase order (money leaves the company) | Separate agent card, low limit | 2 |
-| Marketing agent | Social scheduling tool | Past posts and analytics | Drafts only | Nothing | Every post (brand voice still being refined) | Media generation cap | 1 |
-| Research agent | Web browser | Public web only | Report files in the research folder | Nothing | Widening scope; contacting anyone (it may not) | Model usage cap per task | 1 |
-| Coding agent | Code host and hosting platform | The product's code, test results, preview builds | Branches and proposed changes | Nothing | Merging to the live product; any change to payments, login or data storage | Model usage cap per month | 2 |
-| Operations agent | Monitoring and logs | Logs, errors, speed, order counts | Morning summary; draft incident account | Nothing | Anything that touches customer data or money | Model usage cap per month | 3 to 4 |
+| Agent | Connector / system | Identity used | Read | Write | Delete | Needs your approval | Spend cap | Trust rung | Notes |
+|---|---|---|---|---|---|---|---|---|---|
+| Inbox agent | Company email (official connector) | Its own mailbox delegate, orders address only | Incoming mail to the orders address | Labels and folders only | Nothing | Nothing (sorting only) | Model usage cap per month | 4 | Official connector, pinned 2026-05-02 |
+| Support agent | Order system | Its own support account | Orders and delivery status for the customer in the conversation only | Address change before dispatch; draft replacement order for a damaged-product report (held); goodwill credit up to Rs 300 per customer per month, on that customer's own account, for our own mistake, logged in "credits-2026" | Nothing | Every replacement; any refund; any credit above Rs 300 or outside the rule; any exception to the facts sheet | Model usage cap per month; credits capped in the order system at Rs 300 per customer per month | 3 | The one money power any agent holds (see the rule on separation above); decision D-8 |
+| Support agent | Facts sheet and policies (read-only folder) | Its own support account | All | Nothing | Nothing | Not applicable | | 3 | |
+| Sales agent | Customer file, facts sheet, chat transcripts | Its own account | Leads' conversations, the facts sheet, past proposals | Draft proposals only, in the proposals folder | Nothing | Every proposal (prices and promises); Meera sends it | Model usage cap per month | 2 | |
+| Finance agent | Accounting software | Its own accounting user, no payment role | All ledgers and reports | Categorize, match, send routine invoices at dispatch and one routine reminder; draft everything else | Nothing | Any reminder to a top-ten account; any other message; any payment (the agent has no payment authority at all) | None needed: it cannot spend | 1 to 3 by job | |
+| Finance agent | Bank feed | Read-only feed token | Transactions, read-only | Nothing | Nothing | Not applicable | | 2 | |
+| Purchasing agent | Supplier email and portal | Its own account, no payment details | Supplier quotes, stock levels | Draft purchase orders only | Nothing | Every purchase order; Meera pays every supplier herself | None needed: it holds no card and cannot pay | 2 | Reads untrusted supplier email, so it holds no money power |
+| Marketing agent | Social scheduling tool | Its own editor account, no publish right | Past posts and analytics | Drafts only | Nothing | Every post (brand voice still being refined; decision D-10) | Media generation cap | 1 | |
+| Research agent | Web browser | A separate browser profile, signed in to nothing | Public web only | Report files in the research folder | Nothing | Widening scope; contacting anyone (it may not) | Model usage cap per task | 1 | |
+| Coding agent | Code host and hosting platform | Its own code-host account and scoped token | The product's code, test results, preview builds | Branches and proposed changes | Nothing | Merging to the live product; any change to payments, login or data storage | Model usage cap per month | 2 | |
+| Operations agent | Monitoring and logs | Read-only monitoring key | Logs, errors, speed, order counts | Morning summary; draft incident account | Nothing | Anything that touches customer data or money | Model usage cap per month | 3 to 4 | |
 
-Note what is absent. No agent can pay a supplier, change bank details, change wholesale prices, delete a customer record or publish a post without the founder. The research agent, which reads the open web, has no access to email, money or accounts at all.
+Note what is absent. No agent can pay a supplier, change bank details, change wholesale prices, delete a customer record or publish a post without the founder. No agent holds a card. The only money power in the whole matrix is the support agent's capped goodwill credit on a customer's own account, logged. The research agent, which reads the open web, has no access to email, money or accounts at all.
 
 ---
 

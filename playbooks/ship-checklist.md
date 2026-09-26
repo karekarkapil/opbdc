@@ -9,7 +9,8 @@ The principle: **run the least infrastructure that works, and let agents watch i
 ## How to use it
 
 - **Once, at setup:** work through "Settings to look for on a managed platform". Tick each one, or write down why you do not need it.
-- **Every change:** the six steps. Steps 1, 2, 4, 5 and 6 are automatic once set up. Step 3 is you.
+- **Every change:** the six steps. Steps 1, 2, 5 and 6 are automatic once set up. Steps 3 (your review) and 4 (your approval of the release) are you.
+- **Every week:** the dependency-update task (below).
 - **Every quarter:** re-check the settings (they drift) and run a backup restore drill.
 
 Settings are described by what they do, not by product name, because the names change. As of late 2026, most managed hosting platforms offer most of these; check your platform's documentation for what it calls each one.
@@ -98,11 +99,11 @@ Following the [trust ladder](trust-ladder.md):
 
 | When | What the agent does | Rung |
 |---|---|---|
-| Every morning | Reviews the last day's logs, errors, speed and orders; leaves a short summary: normal, unusual, anything that needs you | 4, autonomous |
-| When an alert fires | Investigates immediately: reads logs around the time, checks recent changes, tries to reproduce; sends a summary with its best explanation and the evidence | 3, act and report |
-| When the cause is a recent release | Automatic rollback, without waiting | 4 |
-| When a fix is needed | Drafts the fix, writes a test that reproduces the problem, opens the change for your review | 2, act with approval |
-| Afterward | Drafts the incident account for you to edit ([incident runbook](incident-runbook.md)) | 1, draft |
+| Every morning | Reviews the last day's logs, errors, speed and orders; leaves a short summary: normal, unusual, anything that needs you | 4 Autonomous within guardrails |
+| When an alert fires | Investigates immediately: reads logs around the time, checks recent changes, tries to reproduce; sends a summary with its best explanation and the evidence | 3 Act and report |
+| When the cause is a recent release | Automatic rollback, without waiting | 4 Autonomous within guardrails |
+| When a fix is needed | Drafts the fix, writes a test that reproduces the problem, opens the change for your review | 2 Act with approval |
+| Afterward | Drafts the incident account for you to edit ([incident runbook](incident-runbook.md)) | 1 Draft |
 
 Two limits stay firmly in place:
 
@@ -117,6 +118,12 @@ Would you release a fix at four on a Friday afternoon with the same calm as on a
 
 - [ ] Yes, because every step above that could fail by tired hands is automated or checked.
 - [ ] Not yet. The step I do not trust is: [___]. Fixing it is next week's first brief.
+
+## Three more practices (Chapter 9)
+
+- [ ] **Keep dependencies current.** A weekly agent task proposes library updates, with test results, for your review (rung 2 Act with approval). Watch for the supply-chain attacks described in Chapter 7: a new or changed dependency is read and pinned before it is accepted.
+- [ ] **If your product uses AI, treat customer input as untrusted.** Any chatbot or feature that reads what customers type can see only that customer's data and cannot issue refunds or move money. The one power worth allowing is a small, capped goodwill credit on the customer's own account, logged (Chapters 12 and 14).
+- [ ] **Plan for your own absence.** Write the absence note in the [incident runbook](incident-runbook.md), and tell your trusted person where it is.
 
 ## Quarterly
 

@@ -13,6 +13,7 @@ Last checked: 2026-09-10
 | Bank-feed outage alert | Every customer with a bank connection | built | 2026-08-05 | specs/bank-feed-alert.md |
 | Ledgerly Assist (service) | Owners who want the month done | live | 2026-05-15 | specs/assist-service.md |
 | Client import for bookkeepers | Bookkeepers moving 10+ clients | draft | 2026-09-08 | specs/client-import.md |
+| Missing receipts list | Owners and bookkeepers at month end | agreed | 2026-09-10 | specs/missing-receipts.md |
 
 ## Retired
 | Spec | Retired on | Why | Decision log entry |
@@ -39,6 +40,6 @@ Last checked: 2026-09-10
 ## Summary: Ledgerly Assist (service)
 
 - **Must-haves:** client sends bank access and receipts by the 3rd working day; reconciled books, summary and questions delivered by the 10th working day; every close signed off by a qualified bookkeeper.
-- **No list:** no tax filing; no paying bills; no guessing missing receipts; no clients with inventory or payroll above ten staff.
+- **No list:** no tax filing; no paying bills; no guessing missing receipts; no clients with inventory; no payroll beyond simple contractor payments recorded as expenses.
 - **Acceptance tests:** three sample months with known right answers (the Assist golden set) reconcile exactly before any new client starts.
 - **Worked if:** clients renew after three months, and the founder's checking time is under 45 minutes per client.

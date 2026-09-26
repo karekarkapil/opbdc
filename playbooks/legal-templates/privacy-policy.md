@@ -37,8 +37,9 @@ We use AI tools to help run our business. Some of your information is
 processed by AI providers acting for us, for these purposes:
 - answering your questions through our AI assistant, which tells you it is
   an AI and can pass you to a person;
-- preparing order confirmations, invoices and proposals, which a person
-  reviews before anything is agreed;
+- preparing order confirmations and routine invoices from your order, at
+  our published prices, which are sent without a person checking each one;
+- drafting proposals, which a person reviews before anything is agreed;
 - [summarizing customer conversations to improve our products].
 Our AI providers [do not / do] use your information to train their models.
 [Describe where the data is processed and stored, and for how long.]

@@ -78,7 +78,7 @@ Last checked: [YYYY-MM-DD]
 
 - **Rules with reasons generalize.** "Never promise a delivery date, because delivery days depend on the area schedule in the facts sheet" helps an agent in cases you never listed.
 - **Permissions are the real guardrail.** Instructions tell an agent what not to do; permissions stop it. Match every "never" to a permission in [`../stack/permission-matrix.md`](../stack/permission-matrix.md).
-- **The escalation rules are the same seven everywhere.** Add workplace-specific ones below them.
+- **The escalation rules are the same seven everywhere, adapted per workplace.** Rule 6's budget, for example, becomes a time limit on one conversation at a support desk, and a support desk adds food-safety or allergy questions to rule 4. Add workplace-specific ones below them.
 
 ## Where this breaks
 

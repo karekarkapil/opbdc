@@ -8,7 +8,7 @@
 
 > **Goal:** Build the "Missing receipts list" feature from the spec, so a small-business owner can see, in one place, every bank line over the receipt threshold that has no receipt attached. Customers tell us they spend Sunday nights matching receipts to bank lines by hand.
 >
-> **Context:** Read the one-page spec at `specs/missing-receipts.md` (must-haves, no list, acceptance tests) and the project's agent instruction file. The receipt threshold is a per-business setting that already exists in the settings model; do not create a new one.
+> **Context:** Read the one-page spec at `specs/missing-receipts.md` (listed in the specifications index; must-haves, no list, acceptance tests) and the project's agent instruction file. The receipt threshold is a per-business setting that already exists in the settings model; do not create a new one.
 >
 > **Constraints:** Tests first: turn the five acceptance tests in the spec into automated tests, run them, and show me them failing before you write the feature. Keep the change small: this feature only, no refactoring of unrelated code, no new dependencies without asking. Read-only on bank data: this feature must not change, delete or re-categorize any transaction. Work on its own branch. Do not touch the billing, login or bank-feed code.
 >
@@ -16,7 +16,7 @@
 >
 > **Verification:** Show the test run failing before the feature and passing after. Run the full test suite, the type checks, the linter and the secret scan, and paste the results. Include a screenshot of the list at phone width with the sample data. State whether this change stores, sends or displays any personal or payment information, and where.
 >
-> **Questions:** Ask before changing any existing test, any database schema, or anything outside the feature's folder. If a test fails twice for the same reason, stop and tell me rather than trying a third approach.
+> **Questions:** Ask before changing any existing test, any database schema, or anything outside the feature's folder. If an approach to a failing test has already failed, stop and tell me rather than repeating it.
 
 **Plan first:** before writing code, send me your plan: the files you will change or add, the tests, and the risks. Wait for my reply.
 

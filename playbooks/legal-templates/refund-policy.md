@@ -7,7 +7,7 @@
 ## How to use it
 
 1. Write the rules in your [facts sheet](../../context-kit/facts-sheet.md) first. This policy states them; it never adds new ones.
-2. Give your support agent this policy and the facts sheet, and nothing else, to answer return questions. It may issue a return label within its limits; refunds and credits stay with you (rung 2 of the [trust ladder](../trust-ladder.md)).
+2. Give your support agent this policy and the facts sheet, and nothing else, to answer return questions. It may collect the details and photos and prepare a replacement for your approval, and, if you allow it, apply the small, capped goodwill credit in your facts sheet. Refunds, replacements and any larger credit stay with you (rung 2 of the [trust ladder](../trust-ladder.md)).
 3. Review twice a year with the rest of your terms, as the [compliance calendar](../compliance-calendar.md) sets out.
 
 The example values follow the fictional Copper Pot Mixers.
@@ -21,8 +21,9 @@ The example values follow the fictional Copper Pot Mixers.
 ## Damaged or broken goods
 If anything arrives damaged or broken, tell us within [48 hours] of
 delivery, with a photo, at [email or chat link]. We will replace it free,
-on your next delivery day or sooner if we can. [Founder name] reads every
-damaged-goods report personally.
+on your area's next delivery day. [Founder name] reads every damaged-goods
+report personally and confirms the replacement. Our AI assistant can take
+the details and photo, but cannot promise a replacement.
 
 ## Wrong items
 If we send the wrong item, tell us within [48 hours]. We will collect it
@@ -40,7 +41,13 @@ the label, and we will look into it and reply within [N working days].
 ## Refunds
 Where a replacement or exchange is not possible, we refund to the original
 payment method within [N working days] of agreeing the refund. Refunds
-and credits are approved by [founder name], not by our AI assistant.
+and replacements are approved by [founder name], not by our AI assistant.
+
+## Goodwill credit
+[If you allow one:] When a delivery goes wrong through our own mistake,
+such as a missed delivery day or a wrong item, our assistant may add a
+credit of up to [Rs 300] per customer per month to your account, taken off
+your next invoice. Any larger credit is decided by [founder name].
 
 ## Cancelled orders
 You can cancel an order within [30 minutes] of placing it, at no charge.

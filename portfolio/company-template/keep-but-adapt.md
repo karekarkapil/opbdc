@@ -18,22 +18,27 @@ Source: [../../context-kit/design-system.md](../../context-kit/design-system.md)
 
 | Part | Keep | Placeholders |
 |---|---|---|
-| Foundations | The named token structure (action, warning, success, text, background), the spacing scale approach | `[ADAPT: color values]`, `[ADAPT: fonts and sizes]`, `[ADAPT: corner and shadow style]` |
+| Our customers' real conditions | The section and its four lines (device, connection, where and when, the design rule that follows) | `[EARN: the new customers' real devices, connections and moments of use, observed, not assumed]` |
+| Foundations | The named token structure (action, warning, error, success, text, background), the spacing scale approach | `[ADAPT: color values]`, `[ADAPT: fonts and sizes]`, `[ADAPT: corner and shadow style]` |
 | Components | The list of standard components and the "when to use" format | `[ADAPT: how each component looks]` |
 | Layout rules | "The two or three things customers come for are always one tap away" | `[EARN: the two or three things THIS customer comes for]` |
 | Imagery | The rules: real product, no generated customers, examples you love and would never use | `[ADAPT: photographic style, light, backgrounds, people and places]` |
 | Interface words | The four rules (no distress, truthful, pleasant and beneficial, no tricks) | `[ADAPT: sample error, confirmation and empty-screen messages in the new voice]` |
-| Accessibility | Minimum sizes, contrast, screen reader labels, slow connections | `[EARN: the new customers' real devices and conditions]` |
+| Accessibility | Minimum sizes, contrast, screen reader labels, slow connections, the review routine | `[ADAPT: the minimums, checked against the real conditions above]` |
 
 ## 2. Voice guide
 
 Source: [../../context-kit/voice-guide.md](../../context-kit/voice-guide.md). Same principles, new voice.
 
-- Keep: the principles, the format of "a reply you love, a reply you hate, and why", the disclosure policy structure.
-- `[ADAPT: three to five words that describe the voice, with what each does NOT mean]`
-- `[ADAPT: sample replies you love and hate, written for the new customer]`
-- `[ADAPT: words to use and words never to use in this industry]`
-- `[ADAPT: disclosure policy wording, if the new company uses AI differently]`
+- Keep: the section structure of the [voice-guide template](../../context-kit/voice-guide.md), the format of "a reply you love, a reply you hate, and why", the disclosure policy structure.
+- "In one sentence": `[ADAPT: who the company sounds like, for the new customer]`
+- "Principles": `[ADAPT: three to five principles, each with an example in the new voice]`
+- "Words we use / words we avoid": `[EARN: the words the new customers use, and the words to avoid in this industry]`
+- "A reply we love" and "A reply we hate": `[EARN: real replies to the new customers, one you approved unchanged and one you rejected, with why]`
+- "By channel": `[EARN: the channels where the new customers actually are]`
+- "Things we never say": `[ADAPT: the new company's claims it must never make]`
+- "Our disclosure policy": `[ADAPT: wording, if the new company uses AI differently]`
+- "Rejection log": start it empty.
 
 ## 3. Support, sales and marketing playbooks
 
@@ -45,7 +50,7 @@ Same patterns, new facts, new offers.
 | [../../playbooks/first-ten.md](../../playbooks/first-ten.md) | The method: agents prepare, you rewrite and send | `[EARN: who the ideal customer is, from the new ten conversations]`, `[ADAPT: note template in the new voice]` |
 | [../../playbooks/pillar-and-spoke.md](../../playbooks/pillar-and-spoke.md) | The workflow, the edit pass, the volume cap | `[EARN: the two or three channels where these customers actually are]`, `[ADAPT: volume cap]` |
 | [../../briefs/research-agent.md](../../briefs/research-agent.md) | The rules: pain, quotes with links, money and workarounds, untrusted reading | `[ADAPT: market variant and sources]` |
-| Proposal and quote templates | Agents draft, you send; pricing is yours | `[EARN: prices and offers]` |
+| Your first company's proposal playbook (the "Drafting a proposal or quote" line in the [playbooks index template](../../context-kit/playbooks.md); Copper Pot's is "Proposal for a multi-outlet account" in its [index](../../context-kit/examples/beverage-company/playbooks.md)), and the paid-pilot template in [first-ten.md](../../playbooks/first-ten.md) | Agents draft, you send; pricing is yours; first-order quantities start small | `[EARN: prices and offers]`, `[ADAPT: the proposal's sections for the new product]` |
 
 ## 4. Golden sets and evals
 

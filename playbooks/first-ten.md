@@ -13,7 +13,7 @@ This file holds a brief for the list-building agent, a note template to personal
 1. Start with the people from your [ten conversations](customer-conversations.md). Show them what you built and ask if they want it.
 2. Go where your customers gather in person, if they gather anywhere.
 3. For everyone else: the agent builds the list and drafts each note; you rewrite and send each one yourself, a few a day; the agent tracks everything; you do the following up.
-4. Charge from day one. Use a hosted payment link or checkout. Do not build billing.
+4. Charge from day one. Use a hosted payment link or checkout. Do not build billing ([getting paid](getting-paid.md)).
 5. Onboard every one of the first customers personally.
 
 ---
@@ -44,7 +44,7 @@ The agent drafts one per prospect. You rewrite each until it sounds like you.
 >
 > I'm [your name]. I make [what you make, in one line] for [who], here in [place]. [One line on the problem you solve, in the customer's words, e.g. "Bar managers kept telling me their staff don't know what to do with a new bottle, so every kit comes with a one-page recipe card for the team."]
 >
-> [A small, concrete offer, e.g. "Could I drop off a free tasting kit on Tuesday and show your team two drinks in ten minutes?"]
+> [A small, concrete offer that your facts sheet actually makes, e.g. "Could I drop off a free tasting kit, with the one-page recipe card for your team?" (At Copper Pot, a staff tasting visit is offered only to accounts with three or more outlets, so the note offers the kit.)]
 >
 > [Name]
 > [Phone]
@@ -71,8 +71,8 @@ The agent keeps it up to date; you read it each morning and do the follow-ups.
 
 | When | Who | What |
 |---|---|---|
-| Morning, 10 minutes | Agent, then you | Agent posts today's follow-ups and five new drafted notes. You read them |
-| Morning, 30 minutes | You | Rewrite and send five to ten notes. Do today's follow-ups personally |
+| Morning, 10 minutes | Agent, then you | Agent posts today's follow-ups and ten new drafted notes. You read them |
+| Morning, 45 minutes | You | Rewrite and send the ten notes, each until it sounds like you. Do today's follow-ups personally |
 | Afternoon | You | Calls, visits, tastings, onboarding |
 | End of day, 5 minutes | Agent | Updates the tracking sheet from your sent mail and your notes |
 | Same day | You | Anything a prospect said about their problem goes into the customer file |
@@ -133,5 +133,6 @@ After about ten happy customers, and not before:
 ## Related files
 
 - [Customer conversations](customer-conversations.md)
+- [Getting paid](getting-paid.md)
 - [Research agent brief](../briefs/research-agent.md)
 - [Customer file template](../context-kit/customer-file.md)

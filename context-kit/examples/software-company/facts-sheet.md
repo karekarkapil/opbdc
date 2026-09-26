@@ -14,10 +14,12 @@ All prices in US dollars, billed monthly, cancel any time.
 |---|---|---|---|
 | Starter | One business, owner keeps own books | $15/month | 2 bank connections, receipt capture, invoices, profit and loss and cash reports |
 | Plus | One business with a bookkeeper or more activity | $35/month | Unlimited bank connections, categorization rules, monthly close checklist, one invited bookkeeper |
-| Bookkeeper | Independent bookkeepers | $12 per client per month | Everything in Plus for each client, a client dashboard, bulk rules |
+| Bookkeeper | Independent bookkeepers | $12 per client per month (see the note below for customers who joined before 2026-08-01) | Everything in Plus for each client, a client dashboard, bulk rules |
 | Ledgerly Assist (service) | Owners who want the month done for them | $250/month | Done-for-you monthly close, see below |
 
 Sales taxes are added at checkout where they apply.
+
+Bookkeeper plan customers who joined before 2026-08-01 keep the old price of $10 per client per month until 2026-10-01, then pay $12; they were told by email 60 days ahead (decision D-12).
 
 ## Ledgerly Assist
 - Agents prepare the month; a qualified bookkeeper (the founder) checks and signs off every close.
@@ -25,6 +27,7 @@ Sales taxes are added at checkout where they apply.
 - The client receives: reconciled books, a one-page summary and a list of questions, by the 10th working day.
 - We never file taxes, pay bills or move money on the client's behalf.
 - If records are missing, we list what is missing; we do not guess.
+- Assist takes at most 20 clients at a time (decision D-9). When it is full, we offer a place on the waiting list; agents never promise a start date.
 
 ## What we do not do or claim
 - No tax advice and no tax filing. Say: "We can't advise on tax. Your accountant can, and Ledgerly can export everything they need."
@@ -43,7 +46,8 @@ Sales taxes are added at checkout where they apply.
 
 ## Trials, billing and refunds
 - Free trial: 30 days, no card required.
-- Billing: monthly, on the day you subscribed.
+- Billing: monthly, by card through our hosted checkout, on the day you subscribed. We do not send invoices for Ledgerly plans.
+- Failed payments: if a monthly card payment fails, the hosted checkout emails a link to update the card, and we send one reminder. Your data is never deleted because of a failed payment; anything further is decided by the founder.
 - Refunds: first month refunded on request within 14 days. Any other refund or credit is decided by the founder; agents never promise one.
 - Cancelling: in Settings, one click; data stays available for export for 30 days.
 

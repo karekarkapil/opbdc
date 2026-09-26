@@ -22,7 +22,7 @@ A checklist of questions to take to a lawyer, organized by the five areas of Cha
 As described in Chapter 14, and summarized here only as background for your conversation with a lawyer:
 
 - **European Union:** new transparency duties began to apply in August 2026. People must be told when they are interacting with an AI system, and AI-generated content must be marked in a machine-readable way; generative tools already on the market were given until December 2026 to comply with the marking duty. Deepfakes and AI-generated text published on matters of public interest must be labeled, with an exemption where a person has genuine editorial control. Heavier obligations for "high-risk" uses (such as hiring, credit or essential services) were pushed back to December 2027 and August 2028.
-- **United States:** unsettled. Several states require businesses to tell consumers when they are talking to an AI. The federal consumer-protection rule against fake reviews explicitly covers AI-generated testimonials.
+- **United States:** unsettled. Some US states, such as Maine and Utah, require businesses to tell consumers when they are talking to an AI. The federal consumer-protection rule against fake reviews explicitly covers AI-generated testimonials.
 - **Copyright:** courts continue to require human authorship for copyright protection.
 
 Check each of these with your lawyer. They will have moved by the time you read this.
@@ -94,11 +94,12 @@ Your facts: [country], [current structure], [plans for more companies].
 
 ## Starting-point templates
 
-Each template carries this banner: **STARTING POINT ONLY: requires review by a qualified lawyer before use.** They are written for a small company selling goods to businesses, using the fictional Copper Pot Mixers as the pattern. Replace every bracket.
+Each template carries this banner: **STARTING POINT ONLY: requires review by a qualified lawyer before use.** The first three are written for a small company selling goods to businesses, using the fictional Copper Pot Mixers as the pattern; the fourth is a subscription variant for software or a service, using the fictional Ledgerly. Replace every bracket.
 
-- [Terms of sale](legal-templates/terms-of-sale.md)
+- [Terms of sale](legal-templates/terms-of-sale.md) (goods)
 - [Privacy policy](legal-templates/privacy-policy.md)
-- [Refund and returns policy](legal-templates/refund-policy.md)
+- [Refund and returns policy](legal-templates/refund-policy.md) (goods)
+- [Terms of service](legal-templates/terms-of-service.md) (a subscription: software or a service)
 
 ### AI disclosure notice
 

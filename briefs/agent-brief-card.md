@@ -73,7 +73,7 @@ Put these in every agent's standing instructions. The agent stops and asks when:
 
 ## Never above rung 2
 
-Money out, signing or changing a contract, deleting data, public statements, changing terms for existing customers. See the [trust ladder](../playbooks/trust-ladder.md).
+Money out, signing or changing a contract, deleting data, public statements, changing terms for existing customers. The one exception (Chapter 12): a small goodwill credit, up to a fixed limit, on the customer's own account, logged. See the [trust ladder](../playbooks/trust-ladder.md).
 
 ## The weekly sample
 

@@ -11,7 +11,7 @@ Content is harder to grade than a support reply or a bank line, because there is
 - **How many:** five briefs to start: one per channel you use, plus one that has tripped the agent up before.
 - **For each:** the brief, the approved piece, and a short checklist of must-haves and must-nots taken from your [voice guide](../../context-kit/voice-guide.md).
 - **Judge on the checklist, not on taste alone.** Wording will differ each run. The facts, the claims, the voice and the rules must not.
-- **Pass rule:** no factual errors, no banned claims, no invented people or quotes, and at least four of five voice checks met on every piece.
+- **Pass rule:** no factual errors, no banned claims, no invented people or quotes, and on every piece all its voice checks met, or all but one. Report voice checks as met/total (for example 3/4), because cases have different numbers of checks.
 - **Add a case** every time you reject a piece in the edit pass for a reason you can name.
 
 ## Template
@@ -22,7 +22,7 @@ Content is harder to grade than a support reply or a bank line, because there is
 **Approved version:** [paste, or link]
 **Must have:** [facts, the one point, the call to action]
 **Must not:** [claims, words, formats that fail it]
-**Voice checks:** [3 to 5 checks from the voice guide]
+**Voice checks:** [3 to 5 checks from the voice guide; a pass needs all, or all but one]
 **Why it is in the set:** [routine / past rejection on YYYY-MM-DD]
 ```
 
@@ -42,9 +42,9 @@ Content is harder to grade than a support reply or a bank line, because there is
 ### Case 2: Short social post
 **Brief:** One post about the Roasted Pineapple and Ginger mixer for cafes.
 **Must have:** A real photograph of the real product (named in the brief), serve size 30 ml.
-**Must not:** Health claims ("guilt-free", "healthy"). Claims about alcohol content. A generated image of a customer.
+**Must not:** Health claims ("guilt-free", "healthy"). Superlatives we cannot prove ("ultimate", "best"). Claims about alcohol content. A generated image of a customer.
 **Voice checks:** Under 60 words; one concrete detail (a drink, a time, a place); no more than one hashtag.
-**Why it is in the set:** Past rejection: "healthy" appeared, which the facts sheet does not support.
+**Why it is in the set:** Past rejections: "healthy" appeared, which the facts sheet does not support; and "ultimate" appeared twice (June and August), after the voice guide already banned it.
 
 ### Case 3: Staff recipe card
 **Brief:** The one-page bar-staff guide from Chapter 3's example brief.
@@ -70,7 +70,7 @@ Content is harder to grade than a support reply or a bank line, because there is
 
 ## Results table (one per run)
 
-| Case | Facts right | No banned claims | Voice checks met (of 5) | Pass / Fail | Notes |
+| Case | Facts right | No banned claims | Voice checks met (met/total) | Pass / Fail | Notes |
 |---|---|---|---|---|---|
 | 1 | | | | | |
 | 2 | | | | | |
@@ -83,7 +83,7 @@ Content is harder to grade than a support reply or a bank line, because there is
 | Date | What changed | Cases | Passed | Failed cases | Decision |
 |---|---|---|---|---|---|
 | [YYYY-MM-DD] | [e.g. voice guide updated] | [5] | [5] | [none] | [Go live] |
-| 2026-09-10 | Switched writing agent to a cheaper tier | 5 | 3 | 1 (generic opening), 2 ("refreshing and healthy") | Kept the middle tier for newsletters; small tier only for FAQ drafts |
+| 2026-09-10 | Switched writing agent to a cheaper tier | 5 | 3 | case 1 (generic opening), case 2 ("refreshing and healthy") | Kept the middle tier for newsletters; small tier only for FAQ drafts |
 | | | | | | |
 
 ## Related files

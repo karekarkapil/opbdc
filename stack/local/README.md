@@ -83,7 +83,7 @@ Your context kit and agent instructions are plain Markdown files (see [context-k
 
 **1. A harness that supports local models.** If your agent tool can use a local model, nothing changes: it reads the project's instruction file (`AGENTS.md`, `CLAUDE.md` or its equivalent) at the start of every task, whichever model sits underneath.
 
-**2. A script.** For batch jobs (sorting, tagging, extraction), send the instruction file and the relevant context files as the standing instructions, and the item to process as the request. [`ask_local.py`](ask_local.py) does exactly this, with no dependencies beyond Python 3.
+**2. A script.** For batch jobs (sorting, tagging, extraction), send the instruction file and the relevant context files as the standing instructions, and the item to process as the request. [`ask_local.py`](ask_local.py) does exactly this, with no dependencies beyond Python 3. Its default address (Ollama's `http://localhost:11434/v1/chat/completions`, the OpenAI-compatible endpoint) was verified 2026-09-26 against a local server, in both `--brief` and `--each` modes. Some reasoning models include their thinking text in the answer; if yours does, strip it or choose a model setting that leaves it out before a script checks the output.
 
 **3. By hand.** Paste the instruction file at the top of a conversation in the runtime's app. Fine for experiments; not for anything recurring.
 
@@ -95,7 +95,7 @@ Three adjustments make local models behave better with your files:
 
 ## Test before you trust: the golden set
 
-Before a local model takes over a job, run the same [golden set](../../playbooks/verification-checklist.md) through the cloud agent and the local model and compare. Keep the local model on the job only if it matches the answers you know are right. Rerun the golden set whenever you change the model, its version or the instruction file.
+Before a local model takes over a job, run the same [golden set](../../playbooks/golden-sets/) through the cloud agent and the local model and compare (the [verification checklist](../../playbooks/verification-checklist.md) explains how golden sets work). Keep the local model on the job only if it matches the answers you know are right. Rerun the golden set whenever you change the model, its version or the instruction file.
 
 | Case | Right answer | Cloud result | Local result | Match? |
 |---|---|---|---|---|

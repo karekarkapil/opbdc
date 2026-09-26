@@ -1,6 +1,6 @@
 # Portfolio map
 
-*Companion to Chapter 17, "The Holding Company Machine", of* 1 Person, Billion Dollar Conglomerate *(2026 edition). Also used in Chapters 15, 16 and 19. Last reviewed: September 2026.*
+*Companion to Chapter 17, "The Holding Company Machine", of* 1 Person, Billion Dollar Conglomerate *(2026 edition). Last reviewed: September 2026.*
 
 ## What this is
 
@@ -90,7 +90,7 @@ Copy this block once per company.
 
 ## Worked example
 
-*Illustration: the founder, Copper Pot Mixers and Ledgerly are fictional. Copper Pot sells craft cocktail mixers to bars and cafes in Bengaluru; Ledgerly is a small bookkeeping-software company selling to micro businesses in the US and UK. In this illustration, Ledgerly was started as "same machine, new customer" (Chapter 16).*
+*Illustration, and a thought experiment: the founder, Copper Pot Mixers and Ledgerly are fictional. Everywhere else in this repository the two are separate companies with separate founders, both started in late 2025 (Meera runs Copper Pot; Ledgerly's founder is a bookkeeper). Here we imagine one founder holding both, as if Ledgerly had been started later, as "same machine, new customer" (Chapter 16), only after Copper Pot had passed the readiness test. Copper Pot sells craft cocktail mixers to bars and cafes in Bengaluru; Ledgerly is a small bookkeeping-software company selling to micro businesses in the US and UK.*
 
 **Holding layer.** Mission: "Small companies that do one useful thing very well, run by one founder and a machine that keeps its promises." One weekly portfolio review, Monday 9 to 10:30 am. A holding company is under discussion with a lawyer and an accountant in each country, because the two companies are in different jurisdictions.
 
@@ -111,8 +111,8 @@ Copy this block once per company.
 |---|---|---|
 | Path | Cash flow | Asset (built to be sellable) |
 | Quarterly verdict | Keep steady | Grow |
-| Front-office agents | Support, order-intake, marketing drafts | Support (chat and email), onboarding |
-| Back-office agents | Finance and compliance, Copper Pot permissions only | Finance and compliance, Ledgerly permissions only |
+| Front-office agents | Support, sales (proposal drafts), marketing drafts, as in its company brief | Support (chat and email), as in its company brief |
+| Back-office agents | Finance, purchasing and compliance, Copper Pot permissions only | Finance (its own close and Assist preparation) and compliance, Ledgerly permissions only; coding and operations agents reach only Ledgerly's product |
 | Dashboard status | Green | Amber (re-contact rate rising) |
 | Weekly attention | About 30 percent | About 70 percent |
 

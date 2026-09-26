@@ -119,7 +119,7 @@ Views, likes and impressions measure activity, not business. Track these instead
 
 | Month | Where paying customers came from (count by source) | Cost per paying customer, by channel (including your time) | Owned audience (list size, change, how many bought) |
 |---|---|---|---|
-| [YYYY-MM] | [e.g. tastings 3, referrals 2, newsletter 1] | [e.g. tastings: 6 hours each; social: 10 hours, 0 customers] | [e.g. 240 subscribers, +18, 5 ordered] |
+| [YYYY-MM] | [e.g. tastings 3, referrals 2, newsletter 1] | [e.g. tastings: about 6 hours of your time per paying customer; social: 10 hours in the month, 0 customers] | [e.g. 240 subscribers, +18, 5 ordered] |
 | | | | |
 
 Ask every new customer how they heard of you, during onboarding. An agent tallies the answers.
@@ -132,11 +132,11 @@ Ask every new customer how they heard of you, during onboarding. An agent tallie
 
 **Channels:** monthly newsletter to bars and cafes; one professional social network; the website's recipes page. **Cap:** three pieces a week.
 
-**Pillar (the founder's own, recorded as a 20-minute voice note, turned into a draft, then rewritten):** "The kit nobody opened." For three months, tasting kits sat unopened behind bars. When she visited, a manager said: "My staff don't know what to do with the bottle." So she started adding a one-page recipe card and spending ten minutes with the staff. Reorders from bars that got the card and the ten minutes were noticeably higher than from those that did not (she shares her own small numbers, and says they are small).
+**Pillar (the founder's own, recorded as a 20-minute voice note, turned into a draft, then rewritten):** "The kit nobody opened." For three months, tasting kits sat unopened behind bars. When she visited one cafe, the owner said: "My staff don't know what to do with the bottle." So she started adding a one-page recipe card and spending ten minutes with the staff. Reorders from bars that got the card and the ten minutes were noticeably higher than from those that did not (she shares her own small numbers, and says they are small).
 
 **Spokes:**
-1. Newsletter: the story in 300 words, with a photograph of a real bartender using the card (with permission), and an offer of a ten-minute staff session.
-2. Social post: one sentence from the manager (with permission), a real photo of the card on a speed rail, one line: "Every kit now comes with this."
+1. Newsletter: the story in 300 words, with a photograph of a real bartender using the card (with permission), and one offer from the facts sheet: a free tasting kit, now with the recipe card.
+2. Social post: one sentence from the cafe owner (with permission), a real photo of the card on a speed rail, one line: "Every kit now comes with this."
 3. Recipes page: the three drinks from the card, with exact quantities from the facts sheet.
 
 **Rejected in the edit pass, and added to the voice file:** a draft that opened "Bartenders everywhere are embracing craft mixers" (generic, unsupported) and a caption calling the pineapple mixer "a healthier choice" (a health claim the facts sheet does not support).

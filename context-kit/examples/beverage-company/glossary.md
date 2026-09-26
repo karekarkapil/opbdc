@@ -31,6 +31,7 @@ Rule for agents: when a term here appears in a message or document, use this mea
 | Recipe card | The one-page guide for bar staff with our three most popular drinks | Specifications |
 | Tasting visit | Meera visiting to run a staff tasting, for accounts with three or more outlets | Facts sheet |
 | Front desk | The support agent on WhatsApp and the website | Agent instructions |
+| Goodwill credit | Up to Rs 300 per customer per month, added to the customer's account for a mistake that was ours and taken off the next invoice. Not the same as credit terms, which we never offer | Facts sheet; decision D-8 |
 
 ## Abbreviations
 | Abbreviation | Stands for | Meaning here |
@@ -43,4 +44,4 @@ Rule for agents: when a term here appears in a message or document, use this mea
 |---|---|---|
 | Healthy, natural energy | Health claims we do not make | Describe the flavor |
 | Premium, artisanal | Empty; every brand says it | Say what is in the bottle |
-| Credit, terms | We do not offer credit | "Payment is due on delivery" |
+| Credit terms, "pay later" | We do not offer credit terms (a goodwill credit is a different thing; use its full name) | "Payment is due on delivery" |

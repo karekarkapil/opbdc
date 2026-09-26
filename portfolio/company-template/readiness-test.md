@@ -36,7 +36,7 @@ Number of "no" answers: [ ]
 | 2. Review over two hours | [Weekly review](../../playbooks/weekly-review.md): is the agent preparing the pre-read? Are escalations batched? |
 | 3. Jobs stuck at low rungs | [Trust ladder](../../playbooks/trust-ladder.md): which jobs have a track record but no promotion decision? |
 | 4. Stale context | [Context kit](../../context-kit/README.md): the monthly context review |
-| 5. No incident tested | [Incident runbook](../../playbooks/incident-runbook.md): run a drill, such as a backup restore |
+| 5. No incident tested | [Incident runbook](../../playbooks/incident-runbook.md): run a drill, such as the quarterly backup restore drill in the [ship checklist](../../playbooks/ship-checklist.md) |
 | 6. Customers cannot reach you | [Support agent](../../briefs/support-agent.md): the handover rules and "always a way out" |
 | 7. Not rested | The founder's calendar in Chapter 15: protect off time before anything else |
 

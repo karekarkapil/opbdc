@@ -10,7 +10,7 @@ The Verify step of the delegation loop (Brief, Plan, Execute, Verify, Record), w
 
 1. Build the evidence you want into the brief's **Verification** part before the agent starts (see [the brief template](../briefs/brief-template.md)).
 2. When work comes back, run the per-task checklist below. For a two-minute task it takes seconds; for a two-day project, give each line real attention.
-3. For recurring jobs, keep a golden set and run it whenever instructions or tools change.
+3. For recurring jobs, keep a golden set and run it whenever instructions or tools change. Templates and examples: [support](golden-sets/support.md), [finance](golden-sets/finance.md), [content](golden-sets/content.md).
 4. Every week, read a random sample and log it at the bottom of this file (or a copy of it).
 
 ---
@@ -24,7 +24,7 @@ The Verify step of the delegation loop (Brief, Plan, Execute, Verify, Record), w
 - [ ] The agent handed back the evidence the brief asked for (test output, screenshot, source links, line references, sample).
 - [ ] Every factual claim a customer could see traces to a line in the [facts sheet](../context-kit/facts-sheet.md) or another context file.
 - [ ] Anything the agent could not find or source is listed, not smoothed over.
-- [ ] Research claims come with links, and I clicked at least three of them.
+- [ ] Research claims come with links, and I clicked at least five of them, chosen at random.
 
 ### 2. Check the output, not the explanation
 
@@ -103,7 +103,9 @@ Six-part form, as in Chapter 3. Fill the brackets.
 
 ## Weekly sample log
 
-Fifteen minutes, every week, a random selection of what your agents did. Pick at random (for example, every seventh item, or items chosen by a dice roll), not the ones that look interesting.
+Fifteen minutes, every week, a random selection of what your agents did. Pick truly at random (a random-number generator, or a dice roll per item), not by a fixed pattern such as every seventh item, and not the ones that look interesting.
+
+**Rung change:** the [trust ladder](trust-ladder.md)'s rule applies here too. Any incident (a mistake that reached a customer, touched money or data, or broke a limit) demotes the job and resets its count. A near miss or a style slip is logged and fixed, with no rung change.
 
 | Week of | Job | Items read | Problems found | What I changed | Rung change? |
 |---|---|---|---|---|---|
@@ -115,9 +117,9 @@ Fifteen minutes, every week, a random selection of what your agents did. Pick at
 
 | Week of | Job | Items read | Problems found | What I changed | Rung change? |
 |---|---|---|---|---|---|
-| 2026-09-07 | Support replies | 20 | 1 reply promised a Friday delivery | Added "we never deliver on Fridays or weekends, and why" to support instructions; added the ticket to the support golden set | No |
+| 2026-09-07 | Support replies | 20 | 1 reply was right but ran to six sentences at 1 am | Added a short approved reply to the voice guide's examples; reminded the agent of "three sentences is usually enough" | No (a style slip, not an incident) |
 | 2026-09-07 | Email sorting | 15 | None | None | Stays at rung 4 |
-| 2026-09-14 | Research lists | 10 | 1 bar on the list had closed | Research playbook: confirm the business is still open | No |
+| 2026-09-14 | Research lists | 10 | 1 bar on the list had closed, although the playbook already asks for a check (a repeat of lessons log L-5) | Stronger rule: every bar now needs a link to a post or review from the last three months | No (a near miss: rung 1 work caught in review) |
 
 ## Related files
 

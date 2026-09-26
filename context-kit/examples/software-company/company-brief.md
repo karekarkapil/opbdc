@@ -13,7 +13,7 @@ Ledgerly is bookkeeping software for micro businesses and the independent bookke
 ## Who we serve
 - **Our customer:** owners of micro businesses (one to ten staff) in the US and UK who keep their own books, and independent bookkeepers with 5 to 60 such clients.
 - **The moment they need us:** the end of the month, and every Sunday night when the receipts pile up.
-- **Not our customer:** companies with inventory accounting, payroll for more than ten staff, or multiple currencies in one set of books (we do not support these well); accountants who need tax-filing software.
+- **Not our customer:** companies that need inventory accounting, payroll (beyond simple contractor payments recorded as expenses), or multiple currencies in one set of books (we do not support these); accountants who need tax-filing software.
 
 ## Why we exist
 Small businesses lose evenings to matching receipts and bank lines, and still do not trust the result. "I spend every Sunday night matching receipts to bank lines." (customer file, 2025-12-03) "I don't trust a number I can't trace back to the bank." (bookkeeper, 2026-02-17)
@@ -32,7 +32,7 @@ Small businesses lose evenings to matching receipts and bank lines, and still do
 - We do not sell customer data, or use it to train anyone's models.
 
 ## How we are different
-The software is the easy part to copy. Our hard part is trust: every categorization shows why it was made and which bank line it came from, and a qualified bookkeeper stands behind the Assist service. Our proprietary asset is the rules and golden sets built from thousands of real, reviewed months.
+The software is the easy part to copy. Our hard part is trust: every categorization shows why it was made and which bank line it came from, and a qualified bookkeeper stands behind the Assist service. Our proprietary asset is the rules and golden sets built from every month our customers have closed with us and every Assist close the founder has checked, and it grows each month.
 
 ## Who does what
 - **The founder:** product decisions, prices, every refund, every change to how customer data is handled, the Assist sign-off for each client, and reviewing every code change before release.

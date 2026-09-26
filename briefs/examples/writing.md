@@ -10,7 +10,7 @@
 >
 > **Context:** Read the voice guide (especially the newsletter section and the examples of posts I loved and rejected), the facts sheet (products, prices, delivery days, cut-off), and the customer file. Open with the story from my visit last Tuesday to a cafe in Indiranagar: the owner's line, recorded verbatim in the customer file, is the opening. My notes from that visit are pasted below this brief.
 >
-> **Constraints:** Under 300 words. One call to action only: reply to order a tasting kit, or reorder. No discount (we are not running one). No health claims. Do not invent any quote, number or customer; use only what is in the customer file and my notes. The owner agreed to be quoted by first name only.
+> **Constraints:** 250 to 400 words, the newsletter length in the voice guide. One call to action only: reply to order a tasting kit, or reorder. No discount (we are not running one). No health claims. Do not invent any quote, number or customer; use only what is in the customer file and my notes. The owner agreed to be quoted by first name only.
 >
 > **Done:** A draft in the marketing folder, with a subject line and two alternatives, and a note on anything you left out and why.
 >

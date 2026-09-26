@@ -13,7 +13,7 @@ We make craft cocktail mixers, non-alcoholic syrups and mixers with Indian flavo
 ## Who we serve
 - **Our customer:** owners and managers of independent bars and cafes in Bengaluru with one to five outlets.
 - **The moment they need us:** late at night after closing, when they check stock and reorder; and on a busy Friday, when a bartender needs a drink to be fast and the same every time.
-- **Not our customer:** large hotel chains (they buy through central procurement with long credit terms we cannot offer); individual home buyers (we do not sell retail yet; see decision D-4); anyone outside Bengaluru (we deliver ourselves).
+- **Not our customer:** large hotel chains (they buy through central procurement with long credit terms we cannot offer); individual home buyers (we do not sell retail yet; see decision D-4); anyone outside Bengaluru (our delivery partner covers Bengaluru city limits only).
 
 ## Why we exist
 Independent bars want signature drinks but do not have the staff time to make syrups from scratch every week. As one bar manager put it: "Every Monday my head bartender spends three hours reducing pineapple. I'd rather he was behind the bar." (customer file, 2025-11-14)
@@ -37,12 +37,12 @@ The hard part of this business is physical and relational: recipes that taste ri
 
 ## Who does what
 - **The founder:** recipes and tasting, prices and discounts, relationships with bars, approving every payment out, every complaint about a damaged product, every public post.
-- **Agents:** sorting email (rung 4), answering routine stock and delivery questions from the facts sheet (rung 3), drafting social posts and newsletters (rung 1), preparing supplier reorders (rung 2), drafting proposals and invoices (rung 2), the monthly close (agent prepares, founder signs off).
+- **Agents:** sorting email (inbox agent, rung 4); answering routine stock and delivery questions from the facts sheet, with a small, capped goodwill credit for our own mistakes (support agent, rung 3); drafting social posts and newsletters (marketing agent, rung 1); preparing supplier purchase orders (purchasing agent, rung 2; Meera pays); drafting proposals (sales agent, rung 2); sending invoices and polite reminders (finance agent, rung 3); the monthly close (finance agent prepares, founder signs off). The rungs are in the playbooks index.
 - **People we work with:** a part-time packer, a delivery partner, an accountant (quarterly review and tax filings), a lawyer (terms, trademark).
 
 ## Where to find more
 - Facts sheet: [`facts-sheet.md`](facts-sheet.md)
 - Voice guide: [`voice-guide.md`](voice-guide.md)
-- Design system: [`../../design-system.md`](../../design-system.md)
+- Design system: [`../../design-system.md`](../../design-system.md) (section "Example: Copper Pot Mixers")
 - Decision log: [`decision-log.md`](decision-log.md)
 - Playbooks: [`playbooks.md`](playbooks.md)

@@ -56,7 +56,7 @@ reports. Add sources from the brief.
 - the brief would require leaving the stated market, region or date range;
 - you cannot find enough evidence to meet the definition of done;
 - you have spent your time or money budget;
-- an approach has failed twice.
+- you are about to repeat an approach that already failed.
 ```
 
 ## Part 2: Brief template
@@ -99,7 +99,7 @@ Followed by: **Suspicious content** (pages that tried to redirect the agent) and
 - **Where to look:** product reviews (especially the two- and three-star ones, which explain), app-store complaints, community forums and discussion groups, question-and-answer sites, comments under how-to videos, marketplace listings for second-hand or DIY fixes.
 - **Signs of money:** buying several products to solve one problem; paying for a service to do it for them; returns and refunds mentioned in reviews; "I'd pay anything for".
 - **Pitfalls:** consumers complain loudly about things they will not pay to fix; fake and incentivized reviews are common; one viral post is not a trend. Weight repeated, dated, specific complaints.
-- **Example brief:** *Goal:* find recurring problems home cooks in large Indian cities describe when making non-alcoholic drinks for guests. *Context:* company brief; we may one day sell small bottles to consumers. *Constraints:* last 12 months; no alcohol-related problems; do not contact anyone. *Done:* the eight strongest problems, three quotes each with links, current workarounds, signs of money spent. *Verification:* every quote linked; five least-sure quotes listed. *Questions:* ask before including reviews of any single brand more than twice.
+- **Example brief (Copper Pot Mixers, a fictional company):** *Goal:* find recurring problems home cooks in large Indian cities describe when making non-alcoholic drinks for guests. *Context:* company brief; we may one day sell small bottles to consumers. *Constraints:* last 12 months; no alcohol-related problems; do not contact anyone. *Done:* the eight strongest problems, three quotes each with links, current workarounds, signs of money spent. *Verification:* every quote linked; five least-sure quotes listed. *Questions:* ask before including reviews of any single brand more than twice.
 
 ### Small-business markets
 
@@ -125,7 +125,7 @@ Followed by: **Suspicious content** (pages that tried to redirect the agent) and
 - **Where to look:** professional bodies' publications and forums, practitioner communities, continuing-education course topics, job postings and freelance marketplaces, reviews of practice-management software, conference session titles.
 - **Signs of money:** hours billed (or not billable) on the task; paid software they work around; outsourced work; errors that cost fees or penalties.
 - **Pitfalls:** professionals are bound by confidentiality and rarely post specifics; regulated work carries rules the agent will not know. Treat anything about regulation as a question for a specialist, not a finding.
-- **Example brief (Ledgerly, a fictional company):** *Goal:* find recurring, time-consuming problems independent bookkeepers in the US and UK describe in their monthly close work for small-business clients. *Context:* company brief and customer file; our customers are solo bookkeepers with 10 to 40 clients. *Constraints:* last 18 months; no tax-filing or tax-advice problems (we do not offer either); do not contact anyone. *Done:* the ten strongest problems, three quotes each with links, the tools and workarounds used, signs of hours or money spent. *Verification:* every quote linked; claims about rules or regulations marked for specialist review. *Questions:* ask before including accountancy firms with more than five staff.
+- **Example brief (Ledgerly, a fictional company):** *Goal:* find recurring, time-consuming problems independent bookkeepers in the US and UK describe in their monthly close work for small-business clients. *Context:* company brief and customer file; our customers are independent bookkeepers with 5 to 60 clients. *Constraints:* last 18 months; no tax-filing or tax-advice problems (we do not offer either); do not contact anyone. *Done:* the ten strongest problems, three quotes each with links, the tools and workarounds used, signs of hours or money spent. *Verification:* every quote linked; claims about rules or regulations marked for specialist review. *Questions:* ask before including accountancy firms with more than five staff.
 
 ---
 

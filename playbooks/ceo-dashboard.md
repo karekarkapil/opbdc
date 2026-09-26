@@ -56,15 +56,17 @@ Copper Pot Mixers is a fictional company used for illustration. These are its fo
 
 | Area | Green | Amber | Red |
 |---|---|---|---|
-| Cash | 6 months of runway or more | 3 to 6 months | under 3 months |
-| Revenue | month on plan; repeat share 70% or more | 10% below plan, or repeat share 60 to 70% | 20% below plan, or repeat share under 60% |
-| Margin | gross margin 55% or more per case | 45 to 55% | under 45% |
-| Customers | 2 or more new bars a week | 1 | none for 3 weeks |
-| Money owed | nothing overdue (an invoice is overdue 48 hours after delivery) | anything overdue 3 to 7 days | anything over 7 days, or over Rs 20,000 (about $240) in total |
-| Support | 90% confirmed resolutions; nothing waiting over 4 hours | 80 to 90%; anything waiting 4 to 12 hours | under 80%; anything waiting over 12 hours |
+| Cash | 6 months of runway or more | 3 months to under 6 | under 3 months |
+| Revenue | month at 90% of plan or above, and repeat share 70% or more | month at 80% to under 90% of plan, or repeat share 60% to under 70% | month under 80% of plan, or repeat share under 60% |
+| Margin | gross margin 55% or more per case | 45% to under 55% | under 45% |
+| Customers | 2 or more new bars this week | 1 new bar this week, or none for one or two weeks | none for 3 weeks in a row |
+| Money owed | nothing overdue (an invoice is overdue 48 hours after delivery) | anything overdue up to 7 days, and Rs 20,000 or less in total | anything overdue more than 7 days, or more than Rs 20,000 (about $240) in total |
+| Support | 90% or more confirmed resolutions, and nothing waiting over 4 hours | 80% to under 90%, or anything waiting 4 to 12 hours | under 80%, or anything waiting over 12 hours |
 | System | order page up; no flags | one flag | order page down, or no orders when normally expected |
-| Agents | spend on pace for budget | more than 20% ahead of pace | any agent over its limit |
-| The one number | half of repeat orders through "Reorder in one tap" | 35 to 50% | under 35% |
+| Agents | spend up to 20% ahead of pace | more than 20% ahead of pace, and no agent over its limit | any agent over its limit |
+| The one number | 50% or more of repeat orders through "Reorder in one tap" | 35% to under 50% | under 35% |
+
+Each row's bands meet without gaps or overlaps: every value falls in exactly one color. Where a row has two measures, the worse one decides.
 
 ---
 
@@ -82,7 +84,7 @@ Copper Pot Mixers is a fictional company used for illustration. These are its fo
 
 > **Goal:** Compile the one-screen CEO dashboard for [Company name] every morning by [time], so the founder can see the health of the company in two minutes.
 >
-> **Context:** Read this file for the layout and thresholds. Sources: [bank feed], [payment provider], [accounting software], [support tool], [monitoring], [provider usage pages], [the one number's source]. Read the facts sheet for the plan figures.
+> **Context:** Read this file for the layout and thresholds. Sources: [bank feed], [payment provider], [accounting software], [support tool], [monitoring], [provider usage pages], [the one number's source]. Take the plan figures from the current cash forecast and plan in the latest [monthly close](monthly-close.md), not from the facts sheet, which holds only what customers may be told.
 >
 > **Constraints:** Read-only access to every source. Never change a threshold, never estimate or fill in a missing number, never round a red into an amber. Do not act on anything you see; report it.
 >

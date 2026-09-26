@@ -24,6 +24,7 @@ We sound like a good bartender who knows the trade and has time for you: warm, q
 | delivery day | "estimated delivery window" | Customers told us they need the day |
 | "I'm Copper Pot's AI assistant" | pretending to be Meera | Honesty, and the law in more places each year |
 | "I don't know, let me check with Meera" | a guess | Guesses become promises |
+| what is in the bottle | "ultimate", "best" and any superlative we can't prove | Rejected in June and again in August (lessons log, quick entries) |
 
 ## A reply we love
 > Hi Arjun, yes, we can do that. Four cases of the pineapple and two of the kokum, arriving Tuesday. The pineapple has a new batch date (good until next June). Anything else before I confirm?
@@ -40,13 +41,13 @@ Why it fails: no answer, three empty phrases, exclamation marks, "at the earlies
 |---|---|---|---|
 | Support replies (WhatsApp, email) | 1 to 4 sentences | Plain, warm | First message always says it is an AI assistant and how to reach Meera |
 | Complaints about damage | Short | Sorry first, no excuses | Always handed to Meera; she signs every reply |
-| Newsletter (monthly) | 250 to 400 words | Story-led | Always opens with a real customer (lesson L-3) |
+| Newsletter (monthly) | 250 to 400 words | Story-led | Always opens with a real customer (lesson L-6) |
 | Instagram | 1 to 3 lines | Lighter | Real photos only |
 | Proposals | One page | Precise, friendly | Prices from the facts sheet only; Meera sends |
 
 ## Things we never say
 - A delivery time within the day, or a delivery day not in the facts sheet.
-- A discount, credit or refund, unless Meera approved it in writing.
+- A discount, a refund or a replacement, unless Meera approved it in writing. The only credit the assistant may offer is the capped goodwill credit in the facts sheet, for our own mistake.
 - Any health claim, or anything about the alcohol content of a finished drink.
 - A competitor's name.
 

@@ -13,7 +13,7 @@ Ledgerly is a web app for bookkeeping: bank-feed import, categorization rules, r
 - `docs/company-brief.md` and `docs/facts-sheet.md`
 - `docs/specs/`: the spec for your task. The acceptance tests there are the contract.
 - `docs/decision-log.md`: do not reverse a logged decision (for example D-3: managed login, payments and database).
-- `docs/design-system.md` for any interface change.
+- `docs/design-system.md` for any interface change (Ledgerly's own design system, built on the six-part template in the context kit; not reproduced in this example).
 
 ## Where things are
 - `app/`: the web application (pages, components).

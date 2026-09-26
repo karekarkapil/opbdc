@@ -20,30 +20,32 @@ This file holds the template, the reorder example from Chapter 6 in full, and tw
 
 ## Template
 
+The nine parts carry the names Chapter 6 gives them. The examples below use the chapter's short labels, shown in brackets.
+
 ```
 # Feature: [name]
 Last updated: [YYYY-MM-DD]
 
-**Problem:** [Two or three sentences, with at least one verbatim customer quote from the customer file.]
+1. **The problem** (Problem): [Two or three sentences, with at least one verbatim customer quote from the customer file.]
 
-**For:** [The specific customer, and the situation they are in when they use it.]
+2. **Who it is for** (For): [The specific customer, and the situation they are in when they use it.]
 
-**Job:** "[What the customer is trying to get done, in their words.]"
+3. **The job** (Job): "[What the customer is trying to get done, in their words.]"
 
-**Must-haves:** [The smallest set of capabilities that does the job. Every item traces back to the problem.]
+4. **The must-haves** (Must-haves): [The smallest set of capabilities that does the job. Every item traces back to the problem.]
 
-**No list:** [What this feature will deliberately not do, and why. One reason per item.]
+5. **The no list** (No list): [What this feature will deliberately not do, and why. One reason per item.]
 
-**Acceptance tests:**
+6. **Acceptance tests:**
 - *Given* [a situation], *when* [the customer does something], *then* [this happens].
 - *Given* ..., *when* ..., *then* ...
 - *Given* [an error or edge case] ..., *then* ...
 
-**Data:** [What it reads, where that comes from, what it creates or changes, and what it must never touch.]
+7. **Data and connections** (Data): [What it reads, where that comes from, what it creates or changes, and what it must never touch.]
 
-**Risks and questions:** [What could go wrong, and what we do not know yet. How we will find out.]
+8. **Risks and open questions** (Risks and questions): [What could go wrong, and what we do not know yet. How we will find out.]
 
-**Worked if:** [One or two measures, and the date to check them.]
+9. **How we will know it worked** (Worked if): [One or two measures, and the date to check them.]
 ```
 
 ---
@@ -116,7 +118,7 @@ Notice that the no list is longer than the must-haves. That is usually a good si
 
 > **Service: Ledgerly Assist, the done-for-you monthly close**
 >
-> **Problem:** Small business owners know they should close their books every month and rarely do. Months pile up, and the accountant's year-end bill grows. From the customer file: "I don't trust a number I can't trace back to the bank."
+> **Problem:** Small business owners know they should close their books every month and rarely do. Months pile up, and the accountant's year-end bill grows. From the customer file, an owner of a two-person cleaning company: "I don't want another app. I want the month to be done."
 >
 > **For:** A micro business (one to ten staff) using Ledgerly, whose owner wants reliable monthly numbers and has no bookkeeper.
 >
@@ -128,7 +130,7 @@ Notice that the no list is longer than the must-haves. That is usually a good si
 > - *By when:* the 10th working day of the new month.
 > - *Done means:* reconciled to the bank to the cent, every flag either decided by the customer or listed as open, summary sent, checked and signed off by a qualified bookkeeper (the founder).
 >
-> **No list:** We never file taxes or returns on the customer's behalf, and never without their signature. We never pay bills or move the customer's money. We never give tax advice (we refer to their accountant). We never change prior closed months without the customer's written approval. We never contact the customer's customers or suppliers. No payroll in this service.
+> **No list:** We never file taxes or returns, and never give tax advice (we refer the customer to their accountant). We never pay bills or move the customer's money. We never change prior closed months without the customer's written approval. We never contact the customer's customers or suppliers. No payroll beyond simple contractor payments recorded as expenses. No clients with inventory.
 >
 > **When something is missing:** a receipt missing by the 3rd working day is listed as "unmatched, receipt missing" in the summary, not guessed; a transaction we cannot categorize is flagged with our best suggestion and left for the customer; if bank access fails, we tell the customer the same day and the delivery date moves by the delay.
 >
@@ -140,9 +142,9 @@ Notice that the no list is longer than the must-haves. That is usually a good si
 >
 > **Data:** Reads the customer's Ledgerly company, bank feed and receipts. Writes categories, matches and the summary. Never touches payment functions, other customers' companies or prior closed months.
 >
-> **Risks and questions:** Can one bookkeeper check 30 closes a month properly? (Measure the checking time per close for the first ten customers.) Will customers answer questions within two working days? If not, how does that change the delivery date?
+> **Risks and questions:** Can one bookkeeper check 20 closes a month properly, the cap on Assist clients? (Measure the checking time per close for the first ten customers; the target is under 45 minutes each.) Will customers answer questions within two working days? If not, how does that change the delivery date?
 >
-> **Worked if:** After three months, 90 percent of closes are delivered by the 10th working day, the golden set passes every month, and at least eight of the first ten customers renew.
+> **Worked if:** After three months, clients renew (at least eight of the first ten), and the founder's checking time is under 45 minutes per client.
 
 See the [finance golden set](golden-sets/finance.md) for sample cases.
 

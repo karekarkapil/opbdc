@@ -43,6 +43,8 @@ Before promoting, also check:
 
 ## Demotion rules
 
+**What counts as an incident:** any mistake that reached a customer, touched money or data, or broke an agent's limits. A mistake caught before it reached anyone (by your review, a golden-set run or a pre-release check) is a **near miss**: log it and fix the cause, with no rung change. A style slip that you correct in the weekly sample (too long, too stiff) is neither; fix the voice guide.
+
 - A job comes **back down the ladder after any incident**, until the cause is understood and fixed.
 - Drop it at least one rung, or to rung 1 if the incident touched a customer, money or data.
 - Reset its track-record count to zero.
@@ -61,13 +63,15 @@ However good the agents become, these jobs stay at rung 2 (act with approval) or
 
 These are the irreversible actions. Build the rule into permissions: the agent should not *hold* the power to do these alone, so the rule does not depend on your remembering it.
 
+**The one exception (Chapters 10, 12 and 14):** a support agent may apply a small goodwill credit, up to a fixed limit you set, to the customer's own account, and every credit is logged. That is the only money power an agent that reads customer messages may hold. Refunds, replacements, discounts, larger credits and any payment out stay at rung 2.
+
 ---
 
 ## Job register (template)
 
 | Job | Rung | Why | Track record (approved unchanged in a row) | Last incident | Next review | Never above 2? |
 |---|---|---|---|---|---|---|
-| [Job] | [0 to 4] | [reason] | [count] | [YYYY-MM-DD or none] | [YYYY-MM-DD] | [Yes/No] |
+| [Job] | [0 to 4] | [reason] | [count] | [YYYY-MM-DD, or none; near misses are not incidents] | [YYYY-MM-DD] | [Yes/No] |
 | | | | | | | |
 | | | | | | | |
 
@@ -84,15 +88,16 @@ These are the irreversible actions. Build the rule into permissions: the agent s
 | Replying to a complaint about a damaged shipment | 1 | Relationship at risk; the founder signs every reply |
 | Changing wholesale prices | 0 | A decision, not a task |
 
-The same jobs, as they would appear in the full register:
+The same jobs, as they would appear in the full register (as of 2026-09-08), with one job the chapter's table leaves out, the goodwill credit:
 
 | Job | Rung | Why | Track record | Last incident | Next review | Never above 2? |
 |---|---|---|---|---|---|---|
 | Email sorting | 4 | Reversible, high volume | 400+ | none | 2026-12-01 | No |
-| Routine stock and delivery answers | 3 | Facts sheet only; weekly sample | 52 | 2026-08-18 (quoted old delivery charge) | 2026-10-05 | No |
-| Social posts | 1 | Voice still being refined | 11 | none | 2026-10-05 | Yes (public statement) |
-| Supplier reorders | 2 | Money out | 24 | none | 2026-11-02 | Yes (money out) |
-| Damaged-shipment replies | 1 | Relationship at risk | n/a | n/a | 2026-12-01 | No, but founder signs by choice |
+| Routine stock and delivery answers | 3 | Facts sheet only; weekly sample | 52 | 2026-07-02 (a guessed delivery day reached a customer; demoted to rung 1, back at rung 3 from 2026-08-10; lessons log L-8). The 2026-08-18 golden-set failure was a near miss, caught before release | 2026-10-05 | No |
+| Goodwill credits for our own mistakes | 3 | Part of the routine-questions job, switched on 2026-08-10 when that job was back at rung 3; capped in the order system at Rs 300 per customer per month, on the customer's own account, every credit logged (decision D-8) | 18 credits since 2026-08-10, all within the rule | none | 2026-10-05 | Rung 3 only: the one capped exception; never higher |
+| Social posts | 1 | Voice still being refined; rung 2 at thirty in a row (decision D-10) | 11 | none | 2026-10-05 | Yes (public statement) |
+| Supplier reorders | 2 | Money out; the founder pays | 24 | none | 2026-11-02 | Yes (money out) |
+| Damaged-shipment replies | 1 | Relationship at risk; a free replacement is the founder's decision | n/a | n/a | 2026-12-01 | Stays at rung 1 by choice: the founder signs every reply |
 | Wholesale price changes | 0 | A decision | n/a | n/a | n/a | Yes (terms for existing customers) |
 
 ## How rungs map to permissions

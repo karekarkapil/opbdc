@@ -10,7 +10,7 @@ This file holds a question guide, an outreach template to personalize, a summary
 
 ## How to use it
 
-1. Have a research agent build the list of people to approach (see [research agent brief](../briefs/research-agent.md)).
+1. Have an agent build the list of people to approach, using the list-building brief in [first-ten.md](first-ten.md) ("Brief for the list-building agent"), adapted: people who have the problem, for a conversation, not a sale. The [research agent brief](../briefs/research-agent.md) finds problems, not people.
 2. Have an agent draft each outreach message from the template. Edit every one until it sounds like you, and send it yourself.
 3. Use the question guide in the call. Take notes, or record with permission.
 4. After each call, give your notes to the summary agent. Check the quotes against your notes, then add the summary to the customer file the same day.
@@ -119,7 +119,7 @@ Five principles, then the questions.
 | 9 | | | | | | | |
 | 10 | | | | | | | |
 
-**Illustration** (Copper Pot Mixers is a fictional company): the tracker row for a bar manager might read: "Bar manager, two-outlet bar | met at a trade tasting | 2026-03-12 | Yes | 'My staff don't know what to do with the bottle.' | Pays a freelance consultant to train staff on new menus | Send tasting kit when ready."
+**Illustration** (Copper Pot Mixers is a fictional company): the tracker row for the cafe owner in its customer file might read: "Cafe owner, one outlet | visit to her cafe | 2026-01-20 | Yes | 'My staff don't know what to do with the bottle.' | Buys imported syrups from a distributor ('double your price') | Send tasting kit with the recipe card when ready."
 
 ## Related files
 

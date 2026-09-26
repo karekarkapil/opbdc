@@ -1,10 +1,10 @@
 # Company template
 
-*Companion to Chapter 16, "The Second Company", of* 1 Person, Billion Dollar Conglomerate *(2026 edition). Also used in Chapters 17 and 19. Last reviewed: September 2026.*
+*Companion to Chapter 16, "The Second Company", of* 1 Person, Billion Dollar Conglomerate *(2026 edition). Last reviewed: September 2026.*
 
 ## What this is
 
-The first company's machine, packaged so the second company can start with it on day one. Chapter 16 sorts everything from company one into three groups:
+A guide to packaging your first company's machine as a template, so the second company can start with it on day one: the copy-as-is list, the keep-but-adapt list with the placeholders to mark, the checklist of what must be earned fresh, the readiness test and a ninety-day plan. Chapter 16 sorts everything from company one into three groups:
 
 - **Copy as is:** carries across almost unchanged.
 - **Keep, but adapt:** the structure carries across; the content is new. Placeholders mark exactly what to change.

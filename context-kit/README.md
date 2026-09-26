@@ -74,22 +74,24 @@ Agent memory is a notebook, not a record. What an agent remembers is what it dec
 
 ## Carrying the kit to your next company
 
-Chapter 16 sorts the machine into three groups. Here is where each file lands.
+Chapter 16 sorts the machine into three groups. Here is where each file lands. Rows marked *(kit's own elaboration)* are files Chapter 16 does not name; the placement is this kit's suggestion, following the chapter's logic.
 
 | File | When you start company two |
 |---|---|
-| Structure of the kit and every template | **Copy as is** |
-| Playbooks (finance, legal, support patterns) | **Keep, but adapt:** same patterns, new facts |
-| Voice guide | **Keep, but adapt:** same principles, new voice |
-| Design system | **Keep, but adapt:** same parts, new colors, type and imagery |
-| Agent instructions | **Keep, but adapt:** same structure and escalation rules, new locations and facts |
-| Glossary | **Keep, but adapt:** keep the general terms, rewrite the industry ones |
-| Lessons log | **Keep, but adapt:** carry the general lessons into shared playbooks; start a fresh log |
-| Company brief | **Never copy:** written fresh from the new company's own decision to start |
-| Customer file | **Never copy:** the new company's own ten conversations |
-| Facts sheet | **Never copy:** every price, policy and promise rewritten from scratch |
-| Decision log | **Never copy:** start a new one (it may link to portfolio-level decisions) |
-| Specifications | **Never copy:** new problems, new specs |
+| Structure of the kit and every template | **Copy as is** (Chapter 16) |
+| Finance and legal playbooks: the finance stack, the monthly close, the compliance calendar and the agent-safety practices | **Copy as is** (Chapter 16): the method copies; the chart of accounts, categorization rules and filing dates are the new company's own |
+| Support, sales and marketing playbooks | **Keep, but adapt** (Chapter 16): same patterns, new facts, new offers |
+| Golden sets | **Keep, but adapt** (Chapter 16): same method, new examples |
+| Voice guide | **Keep, but adapt** (Chapter 16): same principles, new voice |
+| Design system | **Keep, but adapt** (Chapter 16): same parts, new colors, type and imagery |
+| Agent instructions | **Keep, but adapt** *(kit's own elaboration)*: same structure and escalation rules, new locations and facts |
+| Glossary | **Keep, but adapt** *(kit's own elaboration)*: keep the general terms, rewrite the industry ones |
+| Lessons log | **Keep, but adapt** *(kit's own elaboration)*: carry the general lessons into shared playbooks; start a fresh log |
+| Customer file | **Never copy** (Chapter 16): the new company's own ten conversations |
+| Facts sheet | **Never copy** (Chapter 16): every price, policy and promise rewritten from scratch |
+| Company brief | **Never copy** *(kit's own elaboration)*: written fresh from the new company's own decision to start |
+| Decision log | **Never copy** *(kit's own elaboration)*: start a new one (it may link to portfolio-level decisions) |
+| Specifications | **Never copy** *(kit's own elaboration)*: new problems, new specs |
 
 ## Related files
 

@@ -29,7 +29,7 @@ Constraints:
 [What it must not change, spend, promise or touch.]
 [Limits of size, time, money, sources, tone.]
 
-Done:
+Done (definition of done):
 [What finished looks like, concretely: format, length, where it is saved, what note comes with it.]
 
 Verification:
@@ -116,7 +116,7 @@ the first 10 items]. Do not continue past a checkpoint without my go-ahead.
 
 Budget:
 Spend no more than [time or money] on this. If you reach it, stop and tell me where you are.
-If an approach fails twice, stop and ask rather than trying it a third time.
+If an approach has already failed, stop and ask rather than repeating it.
 ```
 
 **Size the work to something checkable.** "Build the ordering system for bars" is too big for one brief. "Build the page where a bar manager sees past orders, with the tests described in the spec" is about right. "Rename this button" is too small; batch it with others.
@@ -135,6 +135,8 @@ Each example is a complete brief in the six-part form, with a note on why it wor
 | Code | [examples/code.md](examples/code.md) | Ledgerly |
 | Support | [examples/support.md](examples/support.md) | Copper Pot Mixers |
 | Finance | [examples/finance.md](examples/finance.md) | Ledgerly |
+
+An extra, beyond the six kinds of work above: [examples/suppliers.md](examples/suppliers.md), a back-office brief for a pile of supplier email, with the bank-detail fraud rule (Copper Pot Mixers).
 
 ## Related files
 

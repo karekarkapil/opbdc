@@ -15,13 +15,13 @@ Rule for agents: do not reverse a decision logged here. If a task seems to requi
 
 Selected entries shown; the gaps in numbering are entries left out of this example.
 
-### D-10: Weekly social posts move from rung 1 to rung 2
+### D-10: Social posts stay at rung 1 until thirty drafts in a row are approved unchanged
 - **Date:** 2026-09-08
-- **Decision:** the marketing agent prepares posts ready to go; Meera approves each one before it is published, instead of rewriting each.
-- **Reason:** the last thirty drafts were approved with only small edits; the voice guide now has a full rejection log.
-- **Alternatives considered:** rung 3 (rejected: public statements never go above rung 2).
-- **Revisit if:** any post is published with a factual error.
-- **Status:** active. **Files updated:** playbooks index.
+- **Decision:** the marketing agent keeps drafting posts for Meera to finish (rung 1). The job moves to rung 2 (posts prepared ready to go, Meera approves each) only when the track record in the trust-ladder register reaches thirty consecutive drafts approved unchanged.
+- **Reason:** most recent drafts needed only small edits, but small edits are still edits: the register shows eleven approved unchanged in a row, not thirty. The voice guide's rejection log is now full enough to expect the count to grow.
+- **Alternatives considered:** promote now on "small edits" (rejected: not the promotion rule); rung 3 (rejected: public statements never go above rung 2).
+- **Revisit if:** the track record reaches thirty (review date in the trust-ladder register), or any post is published with a factual error.
+- **Status:** active. **Files updated:** playbooks index, trust-ladder register.
 
 ### D-9: Reorder page counted a success; phone and WhatsApp orders continue
 - **Date:** 2026-07-14
@@ -30,9 +30,17 @@ Selected entries shown; the gaps in numbering are entries left out of this examp
 - **Revisit if:** WhatsApp orders drop below a handful a week.
 - **Status:** active.
 
-### D-7: No credit terms, including for the cafe chain
+### D-8: The support agent may apply a small goodwill credit
+- **Date:** 2026-07-10 (switched on 2026-08-10, once routine questions were back at rung 3 after lessons log L-8)
+- **Decision:** when a delivery goes wrong through our own mistake (a missed van, a wrong item), the support agent may add a goodwill credit of up to Rs 300 per customer per month to the customer's own account, taken off the next invoice, and log it in "credits-2026". Nothing else: no refunds, no replacements promised, no discounts, no payments out. Damage in transit never earns an agent credit: every damaged-shipment case goes to Meera (damaged-shipment playbook).
+- **Reason:** customers wait until morning for a small apology Meera would always approve; a capped credit on the customer's own account, logged, is the only money power we are willing to give an agent that reads untrusted messages.
+- **Alternatives considered:** every credit approved by Meera (rejected: slow for a small, routine apology); a larger limit (rejected: the cap is the protection).
+- **Revisit if:** the weekly sample finds a credit outside the rule, or credits exceed Rs 3,000 in any month.
+- **Status:** active. **Files updated:** facts sheet (with change history), agent instructions, support agent file, voice guide, permission matrix, trust-ladder register.
+
+### D-7: No credit terms, whatever the account's size
 - **Date:** 2026-06-20
-- **Decision:** payment stays due on delivery for every customer, whatever their size.
+- **Decision:** payment stays due on delivery for every customer, whatever their size, including multi-outlet accounts.
 - **Reason:** cash forecast shows two months of runway lost if the three largest accounts paid at 30 days. A small company cannot finance its customers.
 - **Alternatives considered:** 15-day terms for accounts with six months of history.
 - **Revisit if:** runway is above twelve months for two consecutive quarters.

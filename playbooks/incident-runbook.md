@@ -126,15 +126,18 @@ acceptance test for the cut-off existed in the spec but had never been
 automated, so the checks passed.
 
 ## What was affected
-Six orders from five bars showed the wrong day. No money was affected. All
-five bars were messaged by 10 am with the correct delivery day; two needed
-an extra case sent from the next van, approved by the founder.
+Six orders from five bars showed the wrong day. No payments or data were
+affected. Money was: two bars needed a free case on the next van to cover
+the week, approved by the founder (two cases of goods given away). All five
+bars were messaged by 10 am with the correct delivery day.
 
 ## What will prevent it next time
 - The cut-off acceptance test is now automated and runs on every change.
 - The morning summary agent now compares shown delivery days with the schedule.
 - Lessons log: "every acceptance test in a spec is automated before release."
-- Customer-facing ordering changes drop to rung 2 for a month.
+- Trust ladder: the coding agent's customer-facing ordering changes drop from
+  rung 2 to rung 1 (the founder finishes each change) until the cause is fixed;
+  the track-record count resets to zero, and the job climbs back one rung at a time.
 ```
 
 ---

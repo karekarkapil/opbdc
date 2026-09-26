@@ -55,7 +55,7 @@ discontinued, we will tell you before we accept an order that includes it.
 - We deliver within [Bengaluru city limits], [Monday to Thursday].
 - Each area has a fixed delivery day. Orders received by [Sunday 8 pm]
   are delivered that week; later orders are delivered the following week.
-- Delivery is [free for two cases or more; otherwise [amount]].
+- Delivery is [free for two cases or more; otherwise Rs 150].
 - Delivery dates are our best estimate. [Describe what happens if we are late.]
 - Risk in the goods passes to you [on delivery]. [Ownership passes on payment.]
 

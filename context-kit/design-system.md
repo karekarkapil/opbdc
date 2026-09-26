@@ -37,6 +37,7 @@ Last checked: [YYYY-MM-DD]
 |---|---|---|---|
 | color-action | [#hex] | [buttons, links] | [ ] |
 | color-warning | [#hex] | [ ] | [ ] |
+| color-error | [#hex] | [something failed and needs action] | [anything that is not an error] |
 | color-success | [#hex] | [ ] | [ ] |
 | color-text | [#hex] | [ ] | [ ] |
 | color-background | [#hex] | [ ] | [ ] |
@@ -139,7 +140,7 @@ Last checked: 2026-09-01
 |---|---|---|---|
 | Primary button | color-action, full width on phones, 56 px tall, white bold label | The one main action on a screen ("Repeat this order", "Confirm") | Twice on one screen |
 | Secondary button | Outline in color-action | Cancel, go back, change quantity | For the main action |
-| Quantity stepper | Minus and plus buttons 48 px square around a 20 px number | Changing cases or bottles | Free-text quantity entry |
+| Quantity stepper | Minus and plus buttons 48 px square around a 20 px number | Changing the number of cases of each flavor | Free-text quantity entry |
 | Order card | Date, total, list of flavors and cases, "Repeat" button | Past orders, newest first | Marketing content |
 | Message banner | Colored left bar, icon, one sentence, one action | Confirmations, warnings, errors | Promotions |
 | Navigation | Bottom bar with three items: Reorder, Orders, Help | Every signed-in screen | Hidden menus |
@@ -159,7 +160,7 @@ Last checked: 2026-09-01
 - Rules: product images show the real product and the real label. We never use generated images of customers, bartenders or experts. Generated images may be used for backgrounds and concepts only, and never to show what a customer will receive.
 
 ## 5. Interface words
-- Words that do not cause distress: "We couldn't place your order because the payment didn't go through. Your card hasn't been charged. Try again or pay on delivery." Not "Error 402".
+- Words that do not cause distress: "We couldn't place your order because the connection dropped. Nothing was ordered. Tap Repeat to try again." Not "Error 502". (Copper Pot is paid on delivery, so no card is ever charged in the app.)
 - Truthful: "Packed" when packed, "Out for delivery" when it has left. Never "limited stock" unless stock is limited.
 - Pleasant and beneficial: short, kind, and every sentence helps the customer finish the order.
 - No tricks: no pre-ticked add-ons, no delivery charge revealed at the last step (it is shown on the order card), cancellation within the 30-minute window is one tap.
@@ -167,7 +168,7 @@ Last checked: 2026-09-01
   - Confirmation: "Done. 4 cases arriving Tuesday. You can cancel until 1:42 am."
   - After cut-off: "It's past Sunday's 8 pm cut-off, so this order will arrive next Tuesday."
   - Empty screen: "No orders yet. Your first order will show here so you can repeat it in one tap."
-  - Discontinued item: "Jaggery Cola is no longer available, so we left it out of this order."
+  - Discontinued item: "[Flavor] is no longer available, so we left it out of this order." (Every current flavor is in the facts sheet; this message appears only when one is retired.)
 
 ## 6. Accessibility
 - Minimum text size: 18 px body, 16 px for secondary labels, never smaller.
@@ -185,4 +186,5 @@ Last checked: 2026-09-01
 
 - [`voice-guide.md`](voice-guide.md): how the brand sounds; interface words should follow it.
 - [`specifications.md`](specifications.md): acceptance tests used to test designs with five real people.
+- [`../playbooks/five-person-test.md`](../playbooks/five-person-test.md): the five-person test itself.
 - [`../playbooks/ship-checklist.md`](../playbooks/ship-checklist.md): where the accessibility check runs on every change.

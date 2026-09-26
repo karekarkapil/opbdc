@@ -88,16 +88,16 @@ Check that none of your scores rests on these.
 
 Copper Pot Mixers is a fictional company used for illustration. It is the company from the start of Chapter 18: a competitor has just launched an identical one-tap reorder system, built in a weekend.
 
-| # | Moat | Score | Evidence | Action this quarter |
-|---|---|---|---|---|
-| 1 | Distribution you own | 3 | 140 bar managers on the email list; about two-thirds of orders are repeat orders placed without a reminder | Start a monthly "new serve" note for the list |
-| 2 | Trust and reputation | 4 | Every damaged-goods report answered by the founder within a day; no unresolved complaints this year; three new bars came by referral | Keep; ask two happy bars for a real testimonial, with permission |
-| 3 | Proprietary data and context | 4 | A year of each bar's ordering history; customer file with dated quotes from 60 bar visits | Use order history to suggest festival-weekend quantities |
-| 4 | Relationships | 4 | Founder has visited every account; runs staff tastings; managers call her directly | Keep; visit the ten largest accounts again before the festival season |
-| 5 | Operations in the physical world | 3 | Recipes and roasting process; deliveries arrive on the fixed day | Document the roasting process as a trade secret; restrict access |
-| 6 | Speed of learning | 3 | Weekly review held 11 of 13 weeks; reorder page improved twice this quarter | Hold all 13 next quarter |
-| 7 | Switching costs, earned honestly | 2 | Reorder history and suggested quantities live in her system | Let bars export their order history at any time |
-| | **Total** | **23 of 35** | | |
+| # | Moat | Score | Last quarter | Evidence | Action this quarter |
+|---|---|---|---|---|---|
+| 1 | Distribution you own | 3 | 3 | 140 bar managers on the email list; about two-thirds of orders are repeat orders placed without a reminder | Start a monthly "new serve" note for the list |
+| 2 | Trust and reputation | 4 | 4 | Every damaged-goods report answered by the founder within a day; no unresolved complaints this year; three new bars came by referral | Keep; ask two happy bars for a real testimonial, with permission |
+| 3 | Proprietary data and context | 4 | 3 | A year of each bar's ordering history; customer file with dated quotes from 60 bar visits | Use order history to suggest festival-weekend quantities |
+| 4 | Relationships | 4 | 4 | Founder has visited every account; runs staff tastings; managers call her directly | Keep; visit the ten largest accounts again before the festival season |
+| 5 | Operations in the physical world | 3 | 3 | Recipes and roasting process; deliveries arrive on the fixed day | Document the roasting process as a trade secret; restrict access |
+| 6 | Speed of learning | 3 | 2 | Weekly review held 11 of 13 weeks; reorder page improved twice this quarter | Hold all 13 next quarter |
+| 7 | Switching costs, earned honestly | 1 | 2 | She believes reorder history and suggested quantities keep bars with her, but has no evidence yet (the scoring guide's 1) | Let bars export their order history at any time; run the test below |
+| | **Total** | **22 of 35** | 21 of 35 | | |
 
 **Weekend test.** The competitor copied the screens. On Monday Copper Pot still has: the bar managers who know the founder by name, a year of each bar's ordering history, a delivery routine that arrives on the right day, recipes that taste better, a reputation for keeping promises in a small industry where everyone talks, and a weekly rhythm that has already improved the feature twice.
 
@@ -108,7 +108,7 @@ Copper Pot Mixers is a fictional company used for illustration. It is the compan
 2. Add a question to every bar visit about upcoming events, recorded in the customer file the same day.
 3. Confirm the privacy policy covers this use of order history (see the [privacy policy template](legal-templates/privacy-policy.md)).
 
-**The one we are pretending: switching costs.** The founder believes bars would not leave because their history lives in her system. She cannot prove it. Test: in the next ten bar visits, ask what it would take to switch to the competitor, and record the answers verbatim. If fewer than half mention anything she provides that the competitor cannot, score it 1 next quarter and stop relying on it.
+**The one we are pretending: switching costs.** The founder believes bars would not leave because their history lives in her system. She cannot prove it, so she scores it 1 this quarter (down from last quarter's hopeful 2). Test: in the next ten bar visits, ask what it would take to switch to the competitor, and record the answers verbatim. If at least half mention something she provides that the competitor cannot, the score can rise next quarter; if not, she stops relying on it.
 
 ---
 

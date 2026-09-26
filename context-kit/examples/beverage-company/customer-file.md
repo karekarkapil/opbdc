@@ -33,7 +33,7 @@ Owners and managers of independent bars and cafes in Bengaluru, one to five outl
 - "Tell me the day. I don't need the hour, I need the day." (bar manager, WhatsApp message, 2026-05-18)
 
 ### Complaints
-- "Two bottles came cracked and the box was wet. I had to throw the whole case." (cafe owner, photo and message, 2026-06-10). Replaced within 48 hours; see lessons log L-7.
+- "Two bottles came cracked and the box was wet. I had to throw the whole case." (cafe owner, photo and message, 2026-06-10). Replacement approved by Meera and delivered within 48 hours; see lessons log L-7.
 
 ## What they have tried
 - Making syrups in-house from scratch (bar, three outlets, 2025-11-14). Cost to them: about three hours of a head bartender's time each week, by their estimate.
@@ -44,10 +44,10 @@ Owners and managers of independent bars and cafes in Bengaluru, one to five outl
 
 ## Conversation summaries
 
-### 2026-08-28: cafe chain, four outlets, inbound website chat then call
+### 2026-08-30: cafe chain, four outlets, inbound website chat (Sunday evening)
 - Situation: operations manager of a cafe chain adding non-alcoholic drinks to the menu across four outlets.
 - Problem in their words: "We want two drinks that taste the same in every outlet, made by staff who change every few months."
 - What they have tried: a juice supplier; "the taste changes with the season."
 - What it costs them: complaints from regulars when a drink tastes different; staff time.
 - Surprises: she cared more about the staff recipe card than about price.
-- Follow-up: proposal sent 2026-08-29 (drafted by the sales agent, edited by Meera); tasting visit at one outlet offered for the week of 2026-09-07.
+- Follow-up: proposal sent before 9 am on 2026-08-31 (drafted overnight by the sales agent, edited and sent by Meera); tasting visit at one outlet offered for the week of 2026-09-07.

@@ -34,12 +34,12 @@ The setup checklist for a one-person company's finances, and the complete instru
 ### 3. Your payment provider, connected
 - [ ] Payment provider connected to the accounting software so sales and fees flow in automatically.
 - [ ] Payouts to the company bank account only.
-- [ ] Refunds and credits restricted to you (rung 2 of the [trust ladder](trust-ladder.md)).
+- [ ] Refunds and credits: agents may prepare them, and only you can release them (rung 2 of the [trust ladder](trust-ladder.md)). The one exception you may choose to allow is a support agent's small, capped goodwill credit on a customer's own account, logged (Chapter 12). The finance agent never holds it.
 
 ### 4. Receipt capture
 - [ ] One place for every bill and receipt: a forwarding email address or a folder.
 - [ ] Rule: captured the day it arrives, photographed or forwarded.
-- [ ] The finance agent can read this place; nobody else writes to it except you and your suppliers' emails.
+- [ ] The finance agent can read it. Only you, and the bills your suppliers email in, add to it.
 
 ### 5. A finance agent
 - [ ] Its own identity and keys, not yours (security baseline, Chapter 2).
@@ -86,7 +86,8 @@ reconcile, flag and draft. You never move money. The founder decides and pays.
 - Categorize transactions using the rules below and last month's decisions.
 - Match payments received to invoices sent, and bills paid to bills received.
 - Reconcile the books to the bank balance, to the [rupee/cent].
-- Draft invoices and send routine invoices as soon as an order is delivered
+- Draft invoices and send routine invoices as soon as an order is
+  [dispatched / delivered: match your facts sheet]
   [delete this line if the founder sends every invoice].
 - Send the pre-approved reminder (below) when a routine invoice is
   [N] days overdue.
@@ -154,7 +155,7 @@ Fill this in for your own systems, then copy it into your [permission matrix](..
 | Receipt inbox or folder | Yes | Label, file | No | Not applicable |
 | Invoicing | Yes | Draft; send routine invoices | No | Credit notes, non-routine invoices |
 | Email to customers | Own sent items | Pre-approved reminder only | No | Every other message |
-| Agent card | Not applicable | Purchases up to [limit] | Not applicable | Anything above [limit]; any new recurring charge |
+| Agent card | Not applicable | No: the finance agent holds no card and buys nothing | Not applicable | Not applicable. If another agent must buy anything, give it its own low-limit card and its own row in the permission matrix; never the finance agent, which reads untrusted invoices |
 | Context kit | Yes | Suggest edits only | No | Every change to the facts sheet |
 
 ## Related files

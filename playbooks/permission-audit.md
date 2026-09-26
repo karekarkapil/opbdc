@@ -33,7 +33,7 @@ Allow about an hour for a single company.
 
 | Item | Type (agent, connector, key, skill, card, job) | Can read | Can write | Can delete | Source and pinned version | Last used | Still needed? | Action (keep, reduce, revoke) |
 |---|---|---|---|---|---|---|---|---|
-| [Support agent] | agent | [orders, tracking, facts sheet] | [address before dispatch, return labels] | [nothing] | [provider] | [date] | [yes/no] | [action] |
+| [Support agent] | agent | [orders, delivery status, facts sheet] | [address before dispatch; capped goodwill credit, logged] | [nothing] | [provider] | [date] | [yes/no] | [action] |
 | [Accounting connector] | connector | [books, bank feed] | [categories, drafts] | [nothing] | [maker, version] | [date] | [yes/no] | [action] |
 | [Monthly-close skill] | skill | not applicable | not applicable | not applicable | [author, version, read on date] | [date] | [yes/no] | [action] |
 | [Agent card] | card | not applicable | [purchases up to limit] | not applicable | [provider] | [date] | [yes/no] | [action] |
@@ -60,7 +60,7 @@ Signed off: [founder], [date]. Items revoked: [N]. Items reduced: [N].
 - [ ] Agent configuration kept under version control, so any change to it is visible.
 
 ### 4. Separation of reading and power
-- [ ] No agent that reads the web, email or customer messages can also move money or reach sensitive data.
+- [ ] No agent that reads the web, email or customer messages can also move money or reach sensitive data. The only exception worth allowing is a small, capped power on the customer's own account, such as a goodwill credit, and even that is logged. Check the log and the cap this quarter.
 - [ ] Customer-facing agents see only the records of the customer they are helping.
 
 ### 5. A kill switch

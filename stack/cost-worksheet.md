@@ -1,6 +1,6 @@
 # Cost worksheet
 
-*Companion to Chapter 2, "Your Agent Stack", of* 1 Person, Billion Dollar Conglomerate *(2026 edition). Also used in Chapters 5, 13 and 15. Last reviewed: September 2026.*
+*Companion to Chapter 2, "Your Agent Stack", of* 1 Person, Billion Dollar Conglomerate *(2026 edition). Its numbers feed the unit economics in Chapter 5, the gross margin in Chapter 13 and the monthly review in Chapter 15. Last reviewed: September 2026.*
 
 ## What this is
 
@@ -99,23 +99,38 @@ Every production agent gets a cap and an alert. A runaway loop at three in the m
 
 ## Worked example: a support conversation at Copper Pot Mixers
 
-*Illustration: Copper Pot Mixers is a fictional company. All figures below are assumptions chosen to show the arithmetic, not quotes or measurements. Measure your own.*
+*Illustration: Copper Pot Mixers is a fictional company. All figures below are assumptions chosen to show the arithmetic, not quotes or measurements. Everything is in Indian rupees (for orientation, the companion uses about Rs 83 to the US dollar). Measure your own.*
 
-**Part 1.** Ten real support conversations (stock questions, delivery days, one damaged bottle) were run through the support agent on the small, fast tier.
+**Part 1.** Ten real support conversations (stock questions, delivery days, and one question about an order placed after the Sunday 8 pm cut-off) were run through the support agent on the small, fast tier. Assumed volume: about 300 support conversations a month.
 
-| Line | Value (assumed) |
-|---|---|
-| B: model usage per conversation | $0.02 |
-| C: other per-run costs | $0.00 (text only, no voice) |
-| D: share of the support tool subscription | $0.05 |
-| E: cost per task | $0.07 |
-| F and H: founder review, 1 minute per conversation in the weekly sample of twenty, spread across all conversations | about $0.10 |
-| I: full cost per task | about $0.17 |
-| J: worth | a question answered at 1 am instead of at 10 am the next day |
+| Line | Value (assumed) | How it is worked out |
+|---|---|---|
+| B: model usage per conversation | Rs 2 | From the usage report, divided by 10 |
+| C: other per-run costs | Rs 0 | Text only, no voice |
+| D: share of the support tool subscription | Rs 4 | Rs 1,200 a month / 300 conversations |
+| E: cost per task | **Rs 6** | B + C + D |
+| F: review minutes per conversation | 0.3 minutes | The weekly sample of twenty at about a minute each, about 87 minutes a month, spread across 300 conversations |
+| G: value of the founder's time | Rs 1,500 an hour | Her own honest figure |
+| H: review cost per task | Rs 7.50 | 0.3 / 60 x 1,500 |
+| I: full cost per task | **Rs 13.50** | E + H |
+| J: what the task is worth | Rs 75 | The other way of doing it: Meera answering herself, about 3 minutes a question at Rs 1,500 an hour (and at 1 am instead of 10 am the next day) |
 
-**Part 2.** An average bar triggers about three support conversations a month (about $0.51), places four orders, and generates Rs 12,000 (about $145) of revenue. The agent cost is small next to the goods, delivery and payment fees. Here, the product costs decide the margin, not the agents.
+I (Rs 13.50) is far below J (Rs 75), so the job is worth automating in this form.
 
-**Part 3.** At ten times the customers, the support agent's cost rises roughly in line with conversations, which is fine. What does not scale is the founder's review time if every conversation is read. The redesign: the weekly sample stays at twenty conversations; escalations get read in full; everything else is covered by the golden set and the re-contact rate.
+**Part 2.** One average bar, per month.
+
+| Line | Value (assumed) | How it is worked out |
+|---|---|---|
+| K: tasks | 3 support conversations; 4 orders processed; 4 invoices and the occasional reminder | Order history |
+| L: agent tasks at full cost | Rs 70 | 3 x Rs 13.50 = Rs 40.50 for support, plus about Rs 30 for the other agents' tasks, measured the same way |
+| M: direct cost of the goods and service | Rs 5,300 | Goods Rs 4,300, packing and delivery Rs 700, payment fees Rs 300 |
+| N: cost to serve one bar | **Rs 5,370** | L + M |
+| O: revenue from one bar | Rs 12,000 | About four cases a month |
+| P: gross margin per bar | **Rs 6,630, about 55 percent** | O minus N, and as a share of O |
+
+The agent cost (Rs 70) is about 1 percent of the cost to serve. Here, the product costs decide the margin, not the agents.
+
+**Part 3.** At ten times the customers, the support agent's cost per conversation stays roughly flat, and the monthly total rises in line with conversations, which is fine. What does not scale is the founder's review time if every conversation is read. The redesign: the weekly sample stays at twenty conversations; escalations get read in full; everything else is covered by the golden set and the re-contact rate.
 
 The lesson generalizes. For many small companies, the ten-times test fails first on **your time**, not on the bill.
 
