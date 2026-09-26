@@ -6,7 +6,7 @@
 
 ## The company in one paragraph
 
-Copper Pot Mixers is a small company in Bengaluru, India, selling craft cocktail mixers (non-alcoholic syrups and mixers) to independent bars and cafes with one to five outlets. It was founded in 2025. The founder, Meera, runs it with a staff of agents, a part-time packer, a delivery partner and an accountant who reviews the books every quarter. It is the beverage company the book uses for illustrations: the tasting-kit brief in Chapter 3, the trust ladder in Chapter 4, the reorder spec in Chapter 6, the pineapple campaign in Chapter 11 (the generated-image version the chapter warns against; this kit's voice guide and design system require real photographs) and the four-outlet cafe proposal in Chapter 12.
+Copper Pot Mixers is a small company in Bengaluru, India, selling craft cocktail mixers (non-alcoholic syrups and mixers) to independent bars and cafes with one to five outlets. It was founded in 2025. The founder, Meera, runs it with a staff of agents, a part-time packer, a delivery partner and an accountant who reviews the books every quarter. It is the beverage company the book uses for illustrations: the tasting-kit brief in Chapter 3, the trust ladder in Chapter 4, the reorder spec in Chapter 6 and the four-outlet cafe proposal in Chapter 12. (Chapter 11's campaign is the author's own, not this company's; this kit's voice guide and design system require real photographs of the product.)
 
 ## The ten files
 
