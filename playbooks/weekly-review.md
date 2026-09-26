@@ -23,7 +23,7 @@ Skipped for a month, this is how a company run by agents quietly goes wrong. Don
 |---|---|---|---|
 | 1 | **The dashboard** | 5 min | Read the one-screen [CEO dashboard](ceo-dashboard.md). Note anything amber or red. |
 | 2 | **Flags and escalations** | 10 min | Everything agents escalated this week that is still open, and everything unusual in the logs. Decide each item. |
-| 3 | **The sample** | 15 min | Read a random selection of agent work: twenty support conversations, a few pieces of content, the code changes that went out, the finance agent's categorizations. This is how you catch drift. |
+| 3 | **The sample** | 20 to 25 min | Read a random selection of agent work: twenty support conversations, a few pieces of content, the code changes that went out, the finance agent's categorizations. This is how you catch drift. |
 | 4 | **Context updates** | 10 min | Fix what the week revealed: a missing fact in the facts sheet, a new rule for an agent, a lesson for the lessons log, a decision for the decision log. |
 | 5 | **The trust ladder** | 5 min | Promote a job that has earned more autonomy. Demote one that has had an incident. Note why. |
 | 6 | **The one decision** | 10 min | Name the single most important decision only you can make: a price, a hire, a product direction, a customer relationship, something to stop. Make it, or schedule the conversation that will let you make it. Write it in the decision log. |
