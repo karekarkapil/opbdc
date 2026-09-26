@@ -1,11 +1,10 @@
 # Continuous integration for reference-app. Last checked: 2026-09-26.
 #
-# GitHub only runs workflows from .github/workflows/ at the ROOT of a repository.
-# In the companion repository this file lives inside reference-app/, so it does
-# not run from here. To use it, copy it to <repo root>/.github/workflows/ci.yml.
-# It is already written for that place: every step runs in reference-app/.
-# If you use reference-app/ as the root of your own repository, delete the
-# `paths` filters and the `working-directory` line.
+# GitHub only runs workflows from .github/workflows/ at the ROOT of a repository,
+# so this file lives at the root of the companion repository and runs every step
+# inside reference-app/. If you copy reference-app/ out as the root of your own
+# repository, move this file to its .github/workflows/, and delete the `paths`
+# filters and the `working-directory` line.
 #
 # The checks, in the order Chapter 7 lists them: secret scan, lint, tests,
 # known vulnerabilities in dependencies. If any fails, the change stops here.
@@ -15,9 +14,9 @@ name: reference-app CI
 on:
   push:
     branches: [main]
-    paths: ["reference-app/**", ".github/workflows/ci.yml"]
+    paths: ["reference-app/**", ".github/workflows/reference-app-ci.yml"]
   pull_request:
-    paths: ["reference-app/**", ".github/workflows/ci.yml"]
+    paths: ["reference-app/**", ".github/workflows/reference-app-ci.yml"]
 
 # Read-only by default: CI needs to read the code, never to change it.
 permissions:

@@ -15,7 +15,7 @@ It was built by a coding agent (Claude) on 2026-09-26, working from the briefs i
 | Chapter | What to look at |
 |---|---|
 | **6. The Spec Is the Product** | [`specs/reorder-in-one-tap.md`](specs/reorder-in-one-tap.md): the book's nine-part spec, unchanged, plus the acceptance tests the risk line and the no list imply, and the fifteen decisions the code needed that a one-page spec leaves open. The no list is enforced by tests (AT8). |
-| **7. Building with Coding Agents** | [`AGENTS.md`](AGENTS.md): the standing instructions, with a lessons section that grew with every mistake. [`tests/`](tests/): each acceptance test is an automated test named after it (`test_at1_...` to `test_at8_...`). [`history/`](history/): the build loop as it actually ran: brief, plan, tests first, small change, independent review, record. [`.github/workflows/ci.yml`](.github/workflows/ci.yml): the automated gates. |
+| **7. Building with Coding Agents** | [`AGENTS.md`](AGENTS.md): the standing instructions, with a lessons section that grew with every mistake. [`tests/`](tests/): each acceptance test is an automated test named after it (`test_at1_...` to `test_at8_...`). [`history/`](history/): the build loop as it actually ran: brief, plan, tests first, small change, independent review, record. [`../.github/workflows/reference-app-ci.yml`](../.github/workflows/reference-app-ci.yml): the automated gates. |
 | **9. Ship It, Run It** | [`deploy/README.md`](deploy/README.md): the least infrastructure that works, the six steps from change to customer and the five watches for this app, and an optional container that carries the 2025 draft's container material forward. |
 
 ## What is in the folder
@@ -32,7 +32,7 @@ app/                     the application (about 1,000 lines of Python with comme
 tests/                   94 tests: acceptance, delivery rule, edge cases, facts sheet
 history/                 the briefs the agent worked from, each with its review record
 deploy/                  deployment notes, an optional Dockerfile and compose file
-.github/workflows/ci.yml secret scan, lint, tests, dependency audit
+(CI: ../.github/workflows/reference-app-ci.yml, at the repository root)
 ```
 
 ## Run it on your computer
@@ -83,9 +83,9 @@ For a change you did not write and cannot read, Chapter 7's other step applies t
 
 ## Continuous integration
 
-`.github/workflows/ci.yml` runs on every push and pull request: a secret scan (gitleaks, pinned by version and checksum), lint (ruff), all tests with warnings treated as errors, and a check of the runtime packages for known vulnerabilities (pip-audit). Actions are pinned to commits, not tags.
+`../.github/workflows/reference-app-ci.yml`, at the root of the companion repository, runs on every push and pull request that touches `reference-app/`: a secret scan (gitleaks, pinned by version and checksum), lint (ruff), all tests with warnings treated as errors, and a check of the runtime packages for known vulnerabilities (pip-audit). Actions are pinned to commits, not tags.
 
-**GitHub only runs workflows from `.github/workflows/` at the root of a repository.** In the companion repository this file sits inside `reference-app/`, so it does not run from here. Copy it to the repository root's `.github/workflows/ci.yml`; it is written for that place and runs every step inside `reference-app/`. If `reference-app/` becomes the root of your own repository, delete the `paths` filters and the `working-directory` line.
+**GitHub only runs workflows from `.github/workflows/` at the root of a repository,** which is why this file lives at the companion repository's root and runs every step inside `reference-app/`. If you copy `reference-app/` out as the root of your own repository, move the file into its `.github/workflows/` and delete the `paths` filters and the `working-directory` line.
 
 ## Use it as a template
 
