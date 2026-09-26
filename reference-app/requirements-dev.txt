@@ -1,0 +1,5 @@
+# Development and CI dependencies, pinned. Last checked: 2026-09-26.
+-r requirements.txt
+pytest==9.1.1             # test runner
+httpx2==2.13.1            # used by the FastAPI test client (Starlette prefers it to httpx)
+ruff==0.16.9              # linter and formatter

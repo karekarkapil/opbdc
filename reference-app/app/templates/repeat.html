@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block title %}Repeat an order{% endblock %}
+{% block main %}
+<h1>Repeat your order from {{ short_date(plan.source.created_at) }}</h1>
+
+{% if error %}<p class="error" role="alert">{{ error }}</p>{% endif %}
+{% if notice %}<p class="note">Before you confirm: {{ notice }}</p>{% endif %}
+
+{% if plan.lines %}
+<form method="post" action="/repeat/{{ plan.source.id }}">
+  <input type="hidden" name="token" value="{{ token }}">
+  <p class="hint">Bottles of each flavour. Orders go out in whole cases of {{ bottles_per_case }}, and flavours can be mixed. Set a flavour to 0 to leave it out. Prices are today's prices.</p>
+  {% for line in plan.lines %}
+  <div class="line">
+    <label for="qty-{{ line.product_id }}">
+      <span class="name">{{ line.name }}</span>
+      <span class="pack">{{ line.pack }}, {{ money(line.price_paise) }} each</span>
+    </label>
+    <input id="qty-{{ line.product_id }}" name="qty-{{ line.product_id }}" type="number" inputmode="numeric" min="0" max="{{ max_quantity }}" value="{{ entered.get('qty-' ~ line.product_id, line.quantity) }}">
+  </div>
+  {% endfor %}
+  {% for line in plan.unavailable %}
+  <div class="line unavailable">
+    <span class="name">{{ line.name }}</span>
+    <span class="badge">No longer available</span>
+  </div>
+  {% endfor %}
+  {% if plan.unavailable %}
+  <p class="note">{{ plan.unavailable | map(attribute="name") | join(", ") }} {{ "is" if plan.unavailable | length == 1 else "are" }} no longer made, so {{ "it is" if plan.unavailable | length == 1 else "they are" }} left out of this order.</p>
+  {% endif %}
+
+  {% if subtotal is not none %}
+  <p class="total-line small"><span>Delivery</span> <span>{% if charge %}{{ money(charge) }} (free from two cases){% else %}Free{% endif %}</span></p>
+  <p class="total-line"><span>Total at these quantities</span> <strong>{{ money(subtotal + charge) }}</strong></p>
+  {% endif %}
+  <button type="submit" name="action" value="update" class="button wide">Update total</button>
+
+  <div class="delivery">
+    <span>Delivery if you confirm now</span>
+    {% if preview.date %}
+    <strong>{{ long_date(preview.date) }}</strong>
+    {% if preview.after_cutoff %}<p class="why">{{ preview.reason }}</p>{% endif %}
+    {% else %}
+    <strong>Day to be confirmed</strong>
+    <p class="why">{{ preview.reason }}</p>
+    {% endif %}
+  </div>
+  <button type="submit" name="action" value="confirm" class="button primary wide">Confirm order</button>
+</form>
+{% else %}
+  {% for line in plan.unavailable %}
+  <div class="line unavailable">
+    <span class="name">{{ line.name }}</span>
+    <span class="badge">No longer available</span>
+  </div>
+  {% endfor %}
+  <p class="note">None of the products in this order are still made, so it cannot be repeated. Message us and we will suggest what to try instead.</p>
+{% endif %}
+<p><a href="/">Back to your orders</a></p>
+{% endblock %}

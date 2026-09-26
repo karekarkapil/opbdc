@@ -1,0 +1,25 @@
+# Run the container locally, in demo mode, with a volume for the database.
+# Last checked: 2026-09-26.
+#
+#   export COPPER_POT_SECRET=$(python3 -c "import secrets; print(secrets.token_hex(32))")
+#   docker compose -f deploy/compose.yaml up --build -d
+#   docker compose -f deploy/compose.yaml exec app python -m app.seed
+#   open http://localhost:8000
+#
+# DEMO_MODE=1 is for local runs and private previews only. Never in production.
+
+services:
+  app:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile
+    ports:
+      - "${PORT:-8000}:8000"  # PORT=8080 to use another port on your machine
+    environment:
+      DEMO_MODE: "1"
+      COPPER_POT_SECRET: ${COPPER_POT_SECRET:?set COPPER_POT_SECRET first, see the top of this file}
+    volumes:
+      - orders:/data
+
+volumes:
+  orders:

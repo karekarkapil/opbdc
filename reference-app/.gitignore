@@ -1,0 +1,12 @@
+# Local virtual environment (create with: python3 -m venv .venv)
+.venv/
+# The SQLite database is created by `python -m app.seed`; never commit it
+data/
+*.db
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+# Local environment files may hold secrets; never commit them
+.env
+.env.*

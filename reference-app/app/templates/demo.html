@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Demo{% endblock %}
+{% block main %}
+<h1>Demo mode</h1>
+<p class="hint">This page exists only in demo mode. It stands in for a real sign-in, so a reviewer can walk the acceptance tests on a phone.</p>
+<form method="post" action="/demo">
+  <fieldset>
+    <legend>Sign in as</legend>
+    {% for a in accounts %}
+    <label class="choice"><input type="radio" name="account_id" value="{{ a.id }}" {% if chosen == a.id | string or (not chosen and loop.first) %}checked{% endif %}> {{ a.name }}, {{ a.area }}</label>
+    {% endfor %}
+  </fieldset>
+  <label for="pretend_now">Pretend the time is (Bengaluru time), or leave empty for the real time</label>
+  <input id="pretend_now" name="pretend_now" type="datetime-local" value="{{ pretend_now }}">
+  <p class="hint">To see the cut-off (AT3), pick a Sunday after 8 pm, or 1 am on a Monday. To see the cancel window close (AT6), confirm an order, then come back and set a time more than 30 minutes later.</p>
+  <button type="submit" class="button primary wide">Continue</button>
+</form>
+{% endblock %}

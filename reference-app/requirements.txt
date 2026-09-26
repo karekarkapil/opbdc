@@ -1,0 +1,22 @@
+# Runtime dependencies, pinned. Last checked: 2026-09-26.
+# Add a dependency only with a reason (see AGENTS.md).
+fastapi==0.141.1          # web framework
+uvicorn==0.54.0           # the server that runs the app
+jinja2==3.1.6             # server-rendered HTML templates
+python-multipart==0.0.32  # reads HTML form posts
+tzdata==2026.4            # time zone data, so the cut-off is right on any machine
+
+# Pulled in by the packages above, pinned too so every install is identical.
+# Regenerate with: pip install -r requirements.txt in a fresh venv, then pip freeze.
+annotated-doc==0.0.5
+annotated-types==0.8.0
+anyio==4.15.1
+click==8.5.0
+h11==0.16.0
+idna==3.20
+markupsafe==3.0.3
+pydantic==2.13.5
+pydantic-core==2.46.5
+starlette==1.7.0
+typing-inspection==0.4.4
+typing-extensions==4.16.0

@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block main %}
+<h1>Your last orders</h1>
+{% if orders %}
+<p class="hint">Tap Repeat, change any quantity, then confirm. Order by Sunday 8 pm for delivery that week.</p>
+<ul class="orders">
+  {% for o in orders %}
+  <li class="card" data-order-id="{{ o.id }}">
+    <div class="card-head">
+      <span class="date">{{ short_date(o.created_at) }}</span>
+      <span class="total">{{ money(o.total_paise) }}</span>
+    </div>
+    <ul class="items">
+      {% for line in lines[o.id] %}
+      <li{% if line.discontinued %} class="gone"{% endif %}>{{ line.quantity }} x {{ line.name }}{% if line.discontinued %} (no longer available){% endif %}</li>
+      {% endfor %}
+    </ul>
+    <div class="actions">
+      <a class="button primary" href="/repeat/{{ o.id }}">Repeat</a>
+      <a class="button" href="/orders/{{ o.id }}">Details</a>
+    </div>
+  </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p class="empty">No orders yet. Place your first order on WhatsApp or at hello@copperpot.example; after that, it will appear here to repeat in one tap.</p>
+{% endif %}
+{% endblock %}

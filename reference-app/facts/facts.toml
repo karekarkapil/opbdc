@@ -1,0 +1,41 @@
+# Copper Pot Mixers, Bengaluru: the facts the reorder page tells customers.
+#
+# This is the app's machine-readable copy of the company facts sheet,
+# context-kit/examples/beverage-company/facts-sheet.md (sheet last checked 2026-09-01).
+# The sheet is the source of truth: when a fact changes, it changes there first,
+# then here, in the same change. tests/test_facts_sheet.py fails if they disagree.
+# This file last checked: 2026-09-26.
+
+[ordering]
+# Bengaluru. India Standard Time, UTC+5:30, no daylight saving.
+timezone = "Asia/Kolkata"
+# "Weekly cut-off: Sunday 8 pm for delivery that week."
+cutoff_weekday = "Sunday"
+cutoff_time = "20:00"
+# "Sold by the case of six bottles; mixed cases allowed." Minimum order: one case.
+bottles_per_case = 6
+# "Orders on the reorder page can be cancelled within 30 minutes of placing them."
+cancel_window_minutes = 30
+
+[delivery]
+# "Free for two cases or more; otherwise Rs 150 per delivery."
+charge_rupees = 150
+free_from_cases = 2
+# "We do not deliver on Fridays or weekends."
+no_delivery_days = ["Friday", "Saturday", "Sunday"]
+
+# "Each area has a fixed delivery day." Any other area within city limits:
+# Meera confirms the day, so the page does not promise one.
+[delivery.days]
+Monday = ["Indiranagar", "Domlur", "HAL"]
+Tuesday = ["Koramangala", "HSR Layout", "BTM"]
+Wednesday = ["MG Road", "Church Street", "Richmond Town"]
+Thursday = ["Jayanagar", "JP Nagar", "Basavanagudi"]
+
+[money]
+# "Prices are in Indian rupees." Stored in paise; written "Rs 540".
+currency = "Rs"
+
+# A rule of this page, not a company fact: catches a typed 600 instead of 6.
+[reorder_page]
+max_bottles_per_line = 60

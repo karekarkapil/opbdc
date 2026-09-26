@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}Your orders{% endblock %} | Copper Pot Mixers</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  {% if demo_mode %}
+  <div class="demo-banner">
+    Demo mode{% if account %}: signed in as {{ account.name }}{% endif %}{% if pretend_now %}, pretend time {{ pretend_now.replace("T", " ") }}{% endif %}.
+    <a href="/demo">Change</a>
+  </div>
+  {% endif %}
+  <header class="site"><a href="/">Copper Pot Mixers</a></header>
+  <main>
+    {% block main %}{% endblock %}
+  </main>
+</body>
+</html>

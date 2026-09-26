@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block title %}Order {{ order.id }}{% endblock %}
+{% block main %}
+{% if order.status == "cancelled" %}
+<h1>Order cancelled</h1>
+<p>Nothing will be delivered for this order.</p>
+{% elif upcoming %}
+<h1>Order confirmed</h1>
+{% else %}
+<h1>Past order</h1>
+{% endif %}
+
+{% if message %}<p class="error" role="alert">{{ message }}</p>{% endif %}
+{% if resent %}<p class="error" role="alert">You sent this order again with different quantities. It was already placed at {{ placed_time(order.created_at) }}, so your changes were not applied. To change it, cancel it and repeat.</p>{% endif %}
+
+{% if order.status == "placed" and not order.delivery_date and upcoming %}
+<div class="delivery">
+  <span>Delivery day</span>
+  <strong>To be confirmed</strong>
+  <p class="why">{{ order.delivery_reason }}</p>
+</div>
+{% elif order.status == "placed" and order.delivery_date %}
+<div class="delivery">
+  <span>Delivery day</span>
+  <strong>{{ long_date(order.delivery_date | as_date) }}</strong>
+  {% if upcoming and order.delivery_reason %}<p class="why">{{ order.delivery_reason }}</p>{% endif %}
+</div>
+{% endif %}
+
+<p class="hint">Placed {{ short_date(order.created_at) }} at {{ placed_time(order.created_at) }}.</p>
+<ul class="items card">
+  {% set ns = namespace(total=0) %}
+  {% for line in lines %}
+  {% set ns.total = ns.total + line.quantity * line.unit_price_paise %}
+  <li><span>{{ line.quantity }} x {{ line.name }}</span> <span>{{ money(line.quantity * line.unit_price_paise) }}</span></li>
+  {% endfor %}
+  <li><span>Delivery</span> <span>{% if order.delivery_charge_paise %}{{ money(order.delivery_charge_paise) }}{% else %}Free{% endif %}</span></li>
+  <li class="total-row"><span>Total</span> <span>{{ money(ns.total + order.delivery_charge_paise) }}</span></li>
+</ul>
+
+{% if can_cancel %}
+<form method="post" action="/orders/{{ order.id }}/cancel" class="cancel">
+  <input type="hidden" name="token" value="{{ token }}">
+  <p>Changed your mind? You can cancel until {{ clock_time(deadline) }} on {{ day_label(deadline) }}.</p>
+  <button type="submit" class="button danger">Cancel this order</button>
+</form>
+{% elif window_closed %}
+<p class="hint">{{ window_closed }}</p>
+{% endif %}
+<p><a href="/">Back to your orders</a></p>
+{% endblock %}

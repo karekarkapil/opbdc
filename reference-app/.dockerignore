@@ -1,0 +1,15 @@
+# Keep the container small and free of local files.
+.venv/
+data/
+*.db
+.env
+.env.*
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.git/
+.github/
+tests/
+history/
+specs/
+deploy/
